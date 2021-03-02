@@ -13,16 +13,6 @@ plugins/*
 !themes/wordplate/assets/images/vendor
 
 !plugins/index.php
-!plugins/wp-migrate-db-pro
 !plugins/advanced-custom-fields-pro
-!plugins/wp-migrate-db-pro-media-files
-!plugins/wp-rocket
-!plugins/folders-pro
-!plugins/formidable-pro
-!plugins/formidable-api
-!plugins/formidable-logs
-!plugins/formidable-dates
-!plugins/all-in-one-seo-pack-pro
-!plugins/aioseo-image-seo
-!plugins/aioseo-local-business
-!plugins/mailoptin
+!plugins/wp-sync-db
+!plugins/wp-sync-db-media-files
