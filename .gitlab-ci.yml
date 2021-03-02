@@ -1,0 +1,10 @@
+image: registry.coreye.fr/open/images/hub/centos:centos7
+
+stages:
+  - deploy
+
+trigger_build:
+  stage: deploy
+  script:
+    - curl -X POST -F token=e9b4d025addc13d21571f3c0c77f21 -F ref=$CI_COMMIT_BRANCH https://git.coreye.fr/api/v4/projects/1630/trigger/pipeline
+

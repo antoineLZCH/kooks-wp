@@ -1,0 +1,17 @@
+<div class="block-slider" id="{{ fields.anchor }}">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {% for slide in fields.slides %}
+        <div class="swiper-slide">
+          <div class="container">
+            <h2 class="slide-title recipe-title uppercase"
+                style="-webkit-text-stroke-color: {{ slide.color }}"
+            >
+              {{ slide.title }}
+            </h2>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+/* TAILWIND */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@import "config/texts";
+@import "blocks/blocks";

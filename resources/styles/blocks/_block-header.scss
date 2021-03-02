@@ -1,0 +1,51 @@
+.block-header {
+  .content {
+    height: 80vh;
+
+    .title-forward {
+      color: transparent;
+      -webkit-text-stroke-color: theme('colors.accent-blue');
+      -webkit-text-stroke-width: 2px;
+    }
+
+    .header-image {
+      @screen xxl {
+        top: -10%;
+        right: -10%;
+        width: 1000px;
+      }
+
+      @screen wide {
+        top: -25%;
+        right: -25%;
+        width: 1500px;
+      }
+    }
+
+    .redirect {
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-animation: breathing 3s linear infinite;
+      animation: breathing 3s linear infinite;
+    }
+  }
+}
+
+
+@-webkit-keyframes breathing {
+  0%, 100% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0
+  }
+}
+
+@keyframes breathing {
+  0%, 100% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0
+  }
+}
