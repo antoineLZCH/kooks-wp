@@ -1,0 +1,69 @@
+{% set isReversed = fields.first_section.is_block_reversed %}
+{% set side = isReversed ? "flex-col xl:flex-row xl:flex-row-reverse" : "flex-col xl:flex-row xl:flex-row" %}
+{% set color = fields.main_color %}
+
+<div class="block-product py-8" id="{{ fields.anchor }}">
+  <div class="base">
+    <div class="container">
+      <div class="flex {{ side }}">
+        <div class="lg:w-1/2 mb-6 lg:mb-0">
+          <h2 class="recipe-title uppercase hidden lg:block" style="color: {{ color }}">{{ fields.title }}</h2>
+          <div class="flex flex-col flex-col-reverse lg:flex-row items-center">
+            <div class="lg:w-4/12 flex flex-col items-center">
+              <h2 class="recipe-title uppercase lg:hidden" style="color: {{ color }}">{{ fields.title }}</h2>
+              <h3 class="text-xl text-center mb-6" style="color: {{ color }}">{{ fields.first_section.subtitle }}</h3>
+              <div class="text-center text-accent-blue mb-6">{{ fields.first_section.description }}</div>
+              <a
+                href="{{ fields.first_section.redirection.url }}"
+                class="rounded px-4 py-1 text-white open-modal" style="background-color: {{ color }}"
+                target="{{ fields.first_section.redirection.target }}"
+                title="{{ fields.first_section.redirection.title }}"
+                aria-label="{{ fields.first_section.redirection.title }}"
+              >
+                {{ fields.first_section.redirection.title }}
+              </a>
+            </div>
+            <div class="lg:w-8/12">
+              {% set imagePlacement = isReversed ? 'lg:-left-8' : 'lg:-right-8' %}
+              <img src="{{ fields.first_section.product_image.url }}"
+                   alt="{{ fields.first_section.product_image.alt }}"
+                   class="w-full product-image relative lg:-top-8 mb-6 lg:mb-0 {{ imagePlacement }}">
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2 hidden lg:block">
+          <img src="{{ fields.first_section.product_background.url }}"
+               alt="{{ fields.first_section.product_background.alt }}"
+               class="w-full">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hidden -->
+  {% set modalSide = isReversed ? 'flex-row-reverse' : 'flex-row' %}
+  {% set modalPadding = isReversed ? 'pl-8' : 'pr-8' %}
+  <div class="details inset-0 absolute bg-white pt-8 pb-8 {{ modalPadding }}"
+       id="{{ fields.second_section.anchor }}">
+    <div class="header pl-8">
+      <button class="close-modal" title="Retour aux produits">
+        <i class="icon-arrow-left"></i>
+        <span>RETOUR</span>
+      </button>
+    </div>
+    <div class="flex {{ modalSide }}">
+      <div class="banner-wrapper w-8/12">
+        <h2
+          class="recipe-title uppercase {{ isReversed ? 'pr-8' : 'pl-8' }} {{ isReversed ? 'text-right': 'text-left' }}"
+          style="color: {{ color }}">{{ fields.title }}</h2>
+        <div class="banner bg-no-repeat bg-center bg-cover"
+             style="background-image: url({{ fields.second_section.product_background.url }})"></div>
+      </div>
+      <div class="w-4/12">
+        <img src="{{ fields.second_section.product_image.url }}"
+             alt="{{ fields.second_section.product_image.alt }}"
+             class="relative top-0 {{ isReversed ? '-right-17' : '-left-11' }}"
+        >
+      </div>
+    </div>
+  </div>
+</div>
