@@ -1,0 +1,26 @@
+<div class="main-menu py-8">
+  <div class="container">
+    {% if items %}
+      <div class="flex justify-center items-center">
+        {% for item in items %}
+          <a
+            href="{{ item.url }}"
+            class="text-accent-blue"
+            target="{{ item.target }}"
+            title="{{ item.title }}"
+            aria-label="{{ item.title }}"
+          >
+            {% if item.meta('image') %}
+              <img src="{{ item.meta('image').url }}"
+                   alt="{{ item.meta('image').alt }}"
+                   class="h-20"
+              >
+            {% else %}
+              {{ item.title }}
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

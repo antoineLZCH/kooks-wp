@@ -220,6 +220,10 @@ function editor_full_width_gutenberg()
     .editor-styles-wrapper h1, .editor-styles-wrapper h2, .editor-styles-wrapper h3, .editor-styles-wrapper h4, .editor-styles-wrapper h5, .editor-styles-wrapper h6 {
         font-size: inherit !important;
     }
+
+    .block-editor__container .wp-block img {
+        border: none !important;
+    }
   </style>';
 }
 

@@ -12,14 +12,25 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
-#main {
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  position: fixed;
-  overflow: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
-@import "config/texts";
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+//#main {
+//  top: 0;
+//  left: 0;
+//  z-index: 2;
+//  width: 100%;
+//  position: fixed;
+//  overflow: hidden;
+//}
+
+
+@import "config/config";
 @import "blocks/blocks";

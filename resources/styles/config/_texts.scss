@@ -1,7 +1,14 @@
 .recipe-title {
-  @screen lg {
+  @screen wide {
     font-size: 10rem;
     line-height: 13rem;
+  }
+  @screen xl {
+    font-size: 6.5rem;
+  }
+  @screen lg {
+    font-size: 6rem;
+    line-height: 8rem;
   }
   font-size: 4rem;
   font-weight: 600;

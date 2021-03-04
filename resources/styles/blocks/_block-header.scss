@@ -25,27 +25,6 @@
     .redirect {
       left: 50%;
       transform: translateX(-50%);
-      -webkit-animation: breathing 3s linear infinite;
-      animation: breathing 3s linear infinite;
     }
-  }
-}
-
-
-@-webkit-keyframes breathing {
-  0%, 100% {
-    opacity: 1
-  }
-  50% {
-    opacity: 0
-  }
-}
-
-@keyframes breathing {
-  0%, 100% {
-    opacity: 1
-  }
-  50% {
-    opacity: 0
   }
 }
