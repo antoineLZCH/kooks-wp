@@ -12,5 +12,14 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
+#main {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
 @import "config/texts";
 @import "blocks/blocks";

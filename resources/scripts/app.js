@@ -1,10 +1,12 @@
 window.$ = jQuery
 require('url-search-params-polyfill');
 
-import Swiper, {Navigation, Pagination} from 'swiper';
-import 'swiper/swiper-bundle.min.css';
+import SwiperCore, {EffectFade, Navigation, Pagination} from 'swiper'
+import 'swiper/swiper-bundle.css';
 
-Swiper.use([Navigation, Pagination]);
-window.Swiper = Swiper;
+SwiperCore.use([EffectFade, Navigation, Pagination])
+window.Swiper = SwiperCore;
 
+
+require('./features')
 require('./blocks')

@@ -1,10 +1,51 @@
 .recipe-title {
   @screen lg {
     font-size: 10rem;
+    line-height: 13rem;
   }
   font-size: 4rem;
   font-weight: 600;
+  line-height: 3.5rem;
   letter-spacing: 2px;
   -webkit-text-stroke-width: 5px;
   -webkit-text-fill-color: transparent;
+}
+
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.may-have-bold {
+  strong, b {
+    font-weight: 600;
+  }
+}
+
+.quote {
+  position: relative;
+
+  &:before, &:after {
+    z-index: -1;
+    content: '';
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/quote.png');
+  }
+
+  &:before {
+    top: -8px;
+    left: -8px;
+  }
+
+  &:after {
+    bottom: -8px;
+    right: -8px;
+    transform: rotate(180deg);
+  }
 }

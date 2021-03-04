@@ -5,7 +5,7 @@
         <div class="lg:w-10/12 xl:w-11/12 wide:w-10/12 lg:mx-auto xl:ml-auto text-center xl:text-left">
           <div class="title">
             {% if fields.title %}
-              <h1 class="text-5xl xl:text-8xl flex flex-col">
+              <h1 class="text-5xl xl:text-8xl flex flex-col mx-2 lg:mx-0">
                 <span class="xl:w-11/12 text-accent-blue font-medium leading-tight">
                   {{ fields.title }}
                 </span>
@@ -18,12 +18,14 @@
           </div>
         </div>
       </div>
-      <div class="lg:w-1/2 hidden xl:block">
-        <img src="{{ fields.image.url }}"
-             alt="{{ fields.image.alt }}"
-             class="object-cover transform rotate-12 absolute header-image"
-        >
-      </div>
+      {% if fields.image %}
+        <div class="lg:w-1/2 hidden xl:block">
+          <img src="{{ fields.image.url }}"
+               alt="{{ fields.image.alt }}"
+               class="object-cover transform rotate-12 absolute header-image" id="header-image"
+          >
+        </div>
+      {% endif %}
       <div class="absolute bottom-4 redirect">
         <a
           href="{{ fields.redirection.url }}"

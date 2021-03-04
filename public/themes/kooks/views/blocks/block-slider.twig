@@ -1,10 +1,10 @@
-<div class="block-slider" id="{{ fields.anchor }}">
-  <div class="swiper-container">
+<div class="block-slider overflow-hidden relative" id="{{ fields.anchor }}">
+  <div class="swiper-recipes">
     <div class="swiper-wrapper">
       {% for slide in fields.slides %}
         <div class="swiper-slide">
           <div class="container">
-            <h2 class="slide-title recipe-title uppercase"
+            <h2 class="slide-title recipe-title uppercase lg:w-10/12 lg:ml-auto text-center lg:text-left mb-6 lg:mb-0"
                 style="-webkit-text-stroke-color: {{ slide.color }}"
             >
               {{ slide.title }}
@@ -16,6 +16,14 @@
           </div>
         </div>
       {% endfor %}
+    </div>
+    <div class="navigation">
+      <div class="container">
+        <div class="flex justify-between">
+          <button class="nav-button swiper-prev">&lsaquo;</button>
+          <button class="nav-button swiper-next">&rsaquo;</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
