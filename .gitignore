@@ -4,4 +4,3 @@ node_modules
 .idea
 public/.htaccess
 package-lock.json
-package.json
