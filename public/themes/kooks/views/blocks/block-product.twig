@@ -24,7 +24,7 @@
               </a>
             </div>
             <div class="lg:w-8/12">
-              {% set imagePlacement = isReversed ? 'lg:-left-8' : 'lg:-right-8' %}
+              {% set imagePlacement = isReversed ? 'lg:-right-8' : 'lg:-left-8' %}
               <img src="{{ fields.first_section.product_image.url }}"
                    alt="{{ fields.first_section.product_image.alt }}"
                    class="w-full product-image relative lg:-top-8 mb-6 lg:mb-0 {{ imagePlacement }}">
