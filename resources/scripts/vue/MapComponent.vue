@@ -58,6 +58,7 @@ export default {
 
 <style scoped lang="scss">
 .location-map {
+  width: 100%;
   height: 600px;
   overflow: hidden;
   margin-top: 80px;

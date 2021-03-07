@@ -10,9 +10,13 @@
     font-size: 6rem;
     line-height: 8rem;
   }
-  font-size: 4rem;
+  @screen md {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
   font-weight: 600;
-  line-height: 3.5rem;
+  font-size: 3.5rem;
+  line-height: 3rem;
   letter-spacing: 2px;
   -webkit-text-stroke-width: 3px;
   -webkit-text-fill-color: transparent;

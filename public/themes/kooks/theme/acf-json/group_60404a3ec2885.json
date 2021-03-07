@@ -25,6 +25,33 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_6044bd51cfc04",
+            "label": "Point de couleur",
+            "name": "dot_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#FF6900": "Orange",
+                "#F6BE00": "Jaune",
+                "#979B0B": "Vert",
+                "#DA2C81": "Rose"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -44,5 +71,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1614826068
+    "modified": 1615117673
 }

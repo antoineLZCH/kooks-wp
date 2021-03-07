@@ -1,0 +1,28 @@
+.main-menu {
+  .dot {
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    visibility: hidden;
+    border-radius: 50%;
+    transition: .2s ease-in-out all;
+  }
+
+  .menu-item {
+    &:hover {
+      transition: .2s ease-in-out all;
+
+      .dot {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .current-menu-item {
+    .dot {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

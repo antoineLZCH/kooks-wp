@@ -1,11 +1,11 @@
 <div class="main-menu py-8">
   <div class="container">
     {% if items %}
-      <div class="flex justify-center items-center">
+      <div class="flex justify-between items-center">
         {% for item in items %}
           <a
             href="{{ item.url }}"
-            class="text-accent-blue"
+            class="text-accent-blue flex flex-col items-center {{ item.class }}"
             target="{{ item.target }}"
             title="{{ item.title }}"
             aria-label="{{ item.title }}"
@@ -16,7 +16,8 @@
                    class="h-20"
               >
             {% else %}
-              {{ item.title }}
+              <span class="text-2xl mb-1">{{ item.title }}</span>
+              <span class="dot" style="background-color: {{ item.meta('dot_color') }}"></span>
             {% endif %}
           </a>
         {% endfor %}
