@@ -8,7 +8,7 @@ acf_register_block_type([
     'render_callback' => 'block_contact',
     'category' => 'cards',
     'mode' => 'auto',
-    'icon' => 'admin-home',
+    'icon' => 'id',
     'keywords' => ['block', 'contact', 'generic', 'kooks'],
 ]);
 
