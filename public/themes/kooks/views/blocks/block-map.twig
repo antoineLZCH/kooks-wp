@@ -1,11 +1,18 @@
 <div class="block-map" id="{{ fields.anchor }}">
   <div class="container">
-    <div class="flex">
-      <div class="lg:w-8/12 mx-auto w-full">
-        <div id="kooks-map">
-          <map-component :locations="{{ jsonToProp(locations) }}"></map-component>
+    {% if is_admin() %}
+      <div class="bg-orange-light flex flex-col p-8 items-center justify-center">
+        <div>BLOC DE CARTE</div>
+        <div>Vous pouvez modifier les points de vente en vous rendant dans l'onglet Points de Ventes</div>
+      </div>
+    {% else %}
+      <div class="flex">
+        <div class="lg:w-8/12 mx-auto w-full">
+          <div id="kooks-map">
+            <map-component :locations="{{ jsonToProp(locations) }}"></map-component>
+          </div>
         </div>
       </div>
-    </div>
+    {% endif %}
   </div>
 </div>

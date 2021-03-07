@@ -1,0 +1,27 @@
+<div class="block-partners" id="{{ fields.anchor }}">
+  <div class="container">
+    <div class="flex flex-col">
+      <div class="content mb-8 text-center lg:w-1/2 mx-auto">
+        <h2 class="title-h2 text-orange mb-4">{{ fields.title }}</h2>
+        <div class="text-base text-accent-blue">{{ fields.content }}</div>
+      </div>
+      {% if fields.partners %}
+        <div class="flex">
+          {% for partner in fields.partners %}
+            <div class="w-full lg:w-1/2">
+              <a
+                href="{{ partner.redirection.url }}"
+                class=""
+                target="{{ partner.redirection.target }}"
+                title="{{ partner.redirection.title }}"
+                aria-label="{{ partner.redirection.title }}"
+              >
+                <img src="{{ partner.image.url }}" alt="{{ partner.image.alt }}" class="mx-auto">
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
