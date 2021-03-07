@@ -8,33 +8,62 @@
       <div class="flex {{ side }}">
         <div class="lg:w-1/2 mb-6 lg:mb-0">
           <h2 class="recipe-title uppercase hidden lg:block" style="color: {{ color }}">{{ fields.title }}</h2>
-          <div class="flex flex-col flex-col-reverse lg:flex-row items-center">
-            <div class="lg:w-4/12 flex flex-col items-center">
+          <div class="flex flex-col flex-col-reverse lg:flex-row items-center items-center">
+            <div class="lg:w-4/12 flex flex-col items-center mb-4 lg:mb-0">
               <h2 class="recipe-title uppercase lg:hidden" style="color: {{ color }}">{{ fields.title }}</h2>
               <h3 class="text-xl text-center mb-6" style="color: {{ color }}">{{ fields.first_section.subtitle }}</h3>
               <div class="text-center text-accent-blue mb-6">{{ fields.first_section.description }}</div>
-              <a
-                href="{{ fields.first_section.redirection.url }}"
-                class="rounded px-4 py-1 text-white open-modal" style="background-color: {{ color }}"
-                target="{{ fields.first_section.redirection.target }}"
+              <button
+                data-target="{{ fields.first_section.redirection.url }}"
+                class="rounded px-4 py-1 text-white open-modal hidden lg:block" style="background-color: {{ color }}"
                 title="{{ fields.first_section.redirection.title }}"
                 aria-label="{{ fields.first_section.redirection.title }}"
               >
                 {{ fields.first_section.redirection.title }}
-              </a>
+              </button>
             </div>
             <div class="lg:w-8/12">
-              {% set imagePlacement = isReversed ? 'lg:-right-8' : 'lg:-left-8' %}
+              {% set imagePlacement = isReversed ? '' : 'lg:-right-8' %}
               <img src="{{ fields.first_section.product_image.url }}"
                    alt="{{ fields.first_section.product_image.alt }}"
                    class="w-full product-image relative lg:-top-8 mb-6 lg:mb-0 {{ imagePlacement }}">
+            </div>
+          </div>
+          <div class="content lg:hidden">
+            <div class="flex flex-col lg:flex-row">
+              <div class="w-full">
+                {% set left_column = fields.second_section.left_column %}
+                {% if left_column.contents %}
+                  <div class="contents flex flex-col">
+                    {% for content in left_column.contents %}
+                      <div class="content mb-6">
+                        <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
+                        <div class="text-accent-blue">{{ content.content }}</div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+              <div class="w-full">
+                {% set right_column = fields.second_section.right_column %}
+                {% if right_column.contents %}
+                  <div class="contents flex flex-col">
+                    {% for content in right_column.contents %}
+                      <div class="content mb-6">
+                        <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
+                        <div class="text-accent-blue">{{ content.content }}</div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
             </div>
           </div>
         </div>
         <div class="lg:w-1/2 hidden lg:block">
           <img src="{{ fields.first_section.product_background.url }}"
                alt="{{ fields.first_section.product_background.alt }}"
-               class="w-full">
+               class="pr-8">
         </div>
       </div>
     </div>
@@ -42,7 +71,7 @@
   <!-- Hidden -->
   {% set modalSide = isReversed ? 'flex-row-reverse' : 'flex-row' %}
   {% set modalPadding = isReversed ? 'pl-8' : 'pr-8' %}
-  <div class="details inset-0 absolute bg-white pt-8 pb-8 {{ modalPadding }}"
+  <div class="details inset-0 fixed w-full h-screen bg-white pt-8 pb-8 hidden bg-white z-10"
        id="{{ fields.second_section.anchor }}">
     <div class="header pl-8">
       <button class="close-modal" title="Retour aux produits">
@@ -50,7 +79,7 @@
         <span>RETOUR</span>
       </button>
     </div>
-    <div class="flex {{ modalSide }}">
+    <div class="flex mb-8 {{ modalSide }} {{ modalPadding }}">
       <div class="banner-wrapper w-8/12">
         <h2
           class="recipe-title uppercase {{ isReversed ? 'pr-8' : 'pl-8' }} {{ isReversed ? 'text-right': 'text-left' }}"
@@ -63,6 +92,36 @@
              alt="{{ fields.second_section.product_image.alt }}"
              class="relative top-0 {{ isReversed ? '-right-17' : '-left-11' }}"
         >
+      </div>
+    </div>
+    <div class="content pl-8">
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-8/12">
+          {% set left_column = fields.second_section.left_column %}
+          {% if left_column.contents %}
+            <div class="contents flex flex-col">
+              {% for content in left_column.contents %}
+                <div class="content mb-8">
+                  <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
+                  <div class="text-accent-blue">{{ content.content }}</div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        <div class="w-4/12">
+          {% set right_column = fields.second_section.right_column %}
+          {% if right_column.contents %}
+            <div class="contents flex flex-col">
+              {% for content in right_column.contents %}
+                <div class="content mb-8">
+                  <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
+                  <div class="text-accent-blue">{{ content.content }}</div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>

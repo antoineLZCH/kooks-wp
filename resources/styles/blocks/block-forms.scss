@@ -1,0 +1,36 @@
+.block-contact {
+  label {
+    font-size: 20px;
+    margin-bottom: .5rem;
+    color: theme('colors.orange');
+  }
+
+  input, textarea, select {
+    outline: none;
+    color: theme('colors.accent-blue');
+    border-bottom: 1px solid theme('colors.accent-blue');
+  }
+
+  select {
+
+  }
+
+  .form-field {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-direction: column;
+  }
+
+  .frm_description {
+    font-size: 10px;
+  }
+
+  .frm_error {
+    color: red;
+    font-size: 12px;
+  }
+
+  .frm_button_submit {
+    @apply rounded px-4 py-1 text-white bg-orange;
+  }
+}

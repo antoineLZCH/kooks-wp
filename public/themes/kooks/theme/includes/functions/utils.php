@@ -1,6 +1,5 @@
 <?php
 
-require template_path('includes/functions/pagenavi_settings.php');
 
 function calc_width_percent($number, $total)
 {
@@ -39,16 +38,16 @@ function fetch_all_posts($settings, $featured_post = null, $posts_per_page = -1,
     $featured_id = $featured_post ? $featured_post->ID : '';
 
     $args = [
-        'post_type'      => 'post',
+        'post_type' => 'post',
         'posts_per_page' => $posts_per_page,
-        'orderby'        => 'date',
-        'order'          => 'DESC',
-        'status'         => 'publish',
-        'category__in'   => $terms['categories'],
-        'tag__in'        => $terms['tags'],
-        'paged'          => $is_paged ? get_query_var('paged') : false,
-        'post__not_in'   => [$featured_id],
-        's'              => isset($settings['keywords']) ? $settings['keywords'] : null
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'status' => 'publish',
+        'category__in' => $terms['categories'],
+        'tag__in' => $terms['tags'],
+        'paged' => $is_paged ? get_query_var('paged') : false,
+        'post__not_in' => [$featured_id],
+        's' => isset($settings['keywords']) ? $settings['keywords'] : null
     ];
 
     return new WP_Query($args);
@@ -62,9 +61,9 @@ function format_posts($posts)
         $tmp = [];
         $post_date = new DateTime($post->post_date);
         $date = [
-            'day'   => date_format($post_date, 'd'),
+            'day' => date_format($post_date, 'd'),
             'month' => date_format($post_date, 'M'),
-            'year'  => date_format($post_date, 'Y')
+            'year' => date_format($post_date, 'Y')
         ];
         $tags = get_the_tags($post);
         $t = [];

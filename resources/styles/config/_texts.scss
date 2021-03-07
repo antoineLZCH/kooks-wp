@@ -14,8 +14,11 @@
   font-weight: 600;
   line-height: 3.5rem;
   letter-spacing: 2px;
-  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-fill-color: transparent;
+  @screen lg {
+    -webkit-text-stroke-width: 5px;
+  }
 }
 
 
@@ -55,4 +58,11 @@
     right: -8px;
     transform: rotate(180deg);
   }
+}
+
+.title-h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: 1px;
 }

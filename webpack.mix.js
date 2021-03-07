@@ -31,6 +31,7 @@ mix
     postCss: [tailwindcss('./tailwind.config.js')]
   })
   .js('resources/scripts/app.js', 'scripts')
+  .js('resources/scripts/vue/map.js', 'scripts')
   .sass('resources/styles/app.scss', 'styles')
   .copyDirectory('resources/images', `public/themes/${theme}/theme/assets/images`)
   .copyDirectory('resources/fonts', `public/themes/${theme}/theme/assets/fonts`)

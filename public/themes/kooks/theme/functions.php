@@ -22,8 +22,6 @@ if (file_exists($composer_autoload)) {
 require template_path('includes/functions/utils.php');
 require template_path('includes/functions/add_theme_options.php');
 require template_path('includes/functions/register_acf_blocks.php');
-require template_path('includes/functions/register_cpts.php');
-require template_path('includes/functions/register_custom_blocks_categories.php');
 
 
 /**

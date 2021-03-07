@@ -1,0 +1,43 @@
+{
+    "key": "group_60442e1cca9d1",
+    "title": "Bloc de formulaire de contact",
+    "fields": [
+        {
+            "key": "field_60442e2200338",
+            "label": "Shortcode du formulaire",
+            "name": "form_shortcode",
+            "type": "text",
+            "instructions": "Vous pouvez retrouver le shortcode du formulaire dans le plugin FORMIDABLE",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/block-contact"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1615081132
+}

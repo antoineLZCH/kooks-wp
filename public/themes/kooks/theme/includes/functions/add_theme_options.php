@@ -10,14 +10,13 @@ if (function_exists('acf_add_options_page')) {
         'redirect' => false
     ]);
 
-    acf_add_options_sub_page([
+    acf_add_options_page([
         'page_title' => 'Points de vente',
         'menu_title' => 'Points de vente',
-        'parent_slug' => 'theme_options',
         'menu_slug' => 'sales_options',
         'capability' => 'edit_posts',
-        'redirect' => false
+        'redirect' => false,
+        'icon_url' => 'dashicons-location'
     ]);
-
 
 }
