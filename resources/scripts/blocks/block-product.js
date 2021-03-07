@@ -9,13 +9,13 @@ $(function () {
       let openButton = $('.open-modal', current);
 
       openButton.on('click', function () {
+        window.scrollTo({top: 0})
         currentModal.removeClass('hidden');
-        body.addClass('overflow-hidden')
       })
 
       closeButton.on('click', function () {
+        window.scrollTo({top: current.offset().top})
         currentModal.addClass('hidden');
-        body.removeClass('overflow-hidden')
       })
     })
   }

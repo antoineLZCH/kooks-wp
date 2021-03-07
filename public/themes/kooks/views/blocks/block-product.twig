@@ -12,17 +12,19 @@
             <div
               class="lg:w-1/2 xl:w-6/12 flex flex-col items-start {{ isReversed ? 'xl:items-left' : 'xl:items-center' }} mb-4 lg:mb-0">
               <h2 class="recipe-title uppercase lg:hidden" style="color: {{ color }}">{{ fields.title }}</h2>
-              <h3 class="text-xl mb-6 xl:text-center"
+              <h3 class="text-xl mb-6"
                   style="color: {{ color }}">{{ fields.first_section.subtitle }}</h3>
-              <div class="xl:text-center text-accent-blue mb-6">{{ fields.first_section.description }}</div>
-              <button
-                data-target="{{ fields.first_section.redirection.url }}"
-                class="rounded px-4 py-1 text-white open-modal hidden lg:block" style="background-color: {{ color }}"
-                title="{{ fields.first_section.redirection.title }}"
-                aria-label="{{ fields.first_section.redirection.title }}"
-              >
-                {{ fields.first_section.redirection.title }}
-              </button>
+              <div class="text-accent-blue mb-6">{{ fields.first_section.description }}</div>
+              {% if fields.first_section.redirection %}
+                <button
+                  data-target="{{ fields.first_section.redirection.url }}"
+                  class="rounded px-4 py-1 text-white open-modal hidden lg:block" style="background-color: {{ color }}"
+                  title="{{ fields.first_section.redirection.title }}"
+                  aria-label="{{ fields.first_section.redirection.title }}"
+                >
+                  {{ fields.first_section.redirection.title }}
+                </button>
+              {% endif %}
             </div>
             <div class="lg:w-1/2 xl:w-6/12">
               {% set imagePlacement = isReversed ? '' : 'xl:-right-8' %}
@@ -39,7 +41,7 @@
                   <div class="contents flex flex-col">
                     {% for content in left_column.contents %}
                       <div class="content mb-6">
-                        <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
+                        <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
                         <div class="text-accent-blue may-have-bold">{{ content.content }}</div>
                       </div>
                     {% endfor %}
@@ -52,7 +54,7 @@
                   <div class="contents flex flex-col">
                     {% for content in right_column.contents %}
                       <div class="content mb-6">
-                        <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
+                        <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
                         <div class="text-accent-blue may-have-bold">{{ content.content }}</div>
                       </div>
                     {% endfor %}
@@ -73,10 +75,10 @@
   <!-- Hidden -->
   {% set modalSide = isReversed ? 'flex-row-reverse' : 'flex-row' %}
   {% set modalPadding = isReversed ? 'pl-8' : 'pr-8' %}
-  <div class="details inset-0 fixed w-full h-screen bg-white pt-8 pb-8 hidden bg-white z-10"
+  <div class="details inset-0 absolute w-full h-full bg-white pt-8 pb-8 hidden bg-white z-10"
        id="{{ fields.second_section.anchor }}">
     <div class="header pl-8">
-      <button class="close-modal" title="Retour aux produits">
+      <button class="close-modal pb-8" title="Retour aux produits">
         <i class="icon-arrow-left"></i>
         <span>RETOUR</span>
       </button>
@@ -96,7 +98,7 @@
         >
       </div>
     </div>
-    <div class="content pl-8">
+    <div class="content pl-8 bg-white">
       <div class="flex flex-col lg:flex-row">
         <div class="w-8/12">
           {% set left_column = fields.second_section.left_column %}
@@ -104,8 +106,8 @@
             <div class="contents flex flex-col">
               {% for content in left_column.contents %}
                 <div class="content mb-8">
-                  <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
-                  <div class="text-accent-blue">{{ content.content }}</div>
+                  <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
+                  <div class="text-accent-blue may-have-bold">{{ content.content }}</div>
                 </div>
               {% endfor %}
             </div>
@@ -117,8 +119,8 @@
             <div class="contents flex flex-col">
               {% for content in right_column.contents %}
                 <div class="content mb-8">
-                  <h4 class="mb-4" style="color: {{ color }}">{{ content.title }}</h4>
-                  <div class="text-accent-blue">{{ content.content }}</div>
+                  <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
+                  <div class="text-accent-blue may-have-bold">{{ content.content }}</div>
                 </div>
               {% endfor %}
             </div>
@@ -130,7 +132,7 @@
 </div>
 
 <style>
-  .block-product .may-have-bold {
-    color: {{ fields.color }}
+  .block-product .may-have-bold b, .block-product .may-have-bold strong {
+    color: {{ color }} !important;
   }
 </style>
