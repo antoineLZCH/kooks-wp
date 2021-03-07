@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64a4dcf01dfb0e79bc94b1cfadf34d40",
+    "content-hash": "79ca9014fada25b65090c44767cab1f8",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -3525,6 +3525,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/duplicate-post/"
+        },
+        {
+            "name": "wpackagist-plugin/folders",
+            "version": "2.6.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/folders/",
+                "reference": "tags/2.6.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/folders.2.6.8.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/folders/"
         },
         {
             "name": "wpackagist-plugin/formidable",
