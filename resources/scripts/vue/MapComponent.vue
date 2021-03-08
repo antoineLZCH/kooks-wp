@@ -48,6 +48,7 @@ export default {
     this.map = this.$refs.locationMap;
 
     this.locations.forEach(location => {
+      console.log(location)
       bounds.extend(new leaflet.latLng(location.coordinates.lat, location.coordinates.long))
     })
 
