@@ -6,9 +6,9 @@
         <div class="text-base text-accent-blue">{{ fields.content }}</div>
       </div>
       {% if fields.partners %}
-        <div class="flex">
+        <div class="flex flex-col lg:flex-row">
           {% for partner in fields.partners %}
-            <div class="w-full lg:w-1/2">
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
               <a
                 href="{{ partner.redirection.url }}"
                 class=""

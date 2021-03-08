@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const positionX = (window.innerWidth / 2 - event.x) / 12;
       const positionY = -event.y / 12;
 
-      headerImage.style.transform = `translate(${positionX}px, ${positionY}px) rotate(10deg)`;
+      headerImage.style.transform = `translate(${positionX}px, ${positionY}px) rotate(12deg)`;
     }
   }
 })

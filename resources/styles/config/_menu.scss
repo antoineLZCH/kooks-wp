@@ -25,4 +25,44 @@
       visibility: visible;
     }
   }
+
+  .mobile-menu {
+    height: 80px;
+
+    .menu-toggle {
+      outline: 0;
+    }
+  }
+}
+
+.stamp img {
+  width: 64px;
+  height: 64px;
+}
+
+.modal-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s ease-in-out all;
+
+  &.modal-opened {
+    opacity: 1;
+    visibility: visible;
+    transition: .2s ease-in-out all;
+  }
+
+  .modal-header {
+    height: 80px;
+  }
+
+  .menu-toggle-close {
+    outline: 0;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: .2s ease-in-out all;
+  }
 }
