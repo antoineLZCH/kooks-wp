@@ -82,6 +82,61 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_604612db123b9",
+                    "label": "Coordonnées",
+                    "name": "coordinates",
+                    "type": "group",
+                    "instructions": "Optionnel : Certaines adresses ne fonctionnent pas sur leur format actuel. Auquel cas, il faut renseigner ici la latitude et la longitude.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_604612e5123ba",
+                            "label": "Latitude",
+                            "name": "lat",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_604612ea123bb",
+                            "label": "Longitude",
+                            "name": "long",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
                 }
             ]
         }
@@ -103,5 +158,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615082294
+    "modified": 1615205162
 }
