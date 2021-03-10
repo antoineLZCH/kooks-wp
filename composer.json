@@ -23,9 +23,9 @@
     "wpackagist-plugin/advanced-custom-fields-pro": "^5.9.4",
     "wpackagist-plugin/custom-post-type-ui": "^1.8",
     "wpackagist-plugin/duplicate-post": "^4.0.2",
-    "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.11",
     "wpackagist-plugin/folders": "^2.6",
     "wpackagist-plugin/formidable": "^4.09",
+    "wpackagist-plugin/google-site-kit": "^1.27",
     "wpackagist-plugin/hide-updates": "^1.1",
     "wpackagist-plugin/safe-svg": "^1.9",
     "wpackagist-plugin/timber-library": "^1.18",
@@ -51,7 +51,7 @@
         "wpackagist-plugin/wp-mail-smtp",
         "wpackagist-plugin/duplicate-post",
         "wpackagist-plugin/folders",
-        "wpackagist-plugin/duracelltomi-google-tag-manager"
+        "wpackagist-plugin/google-site-kit"
       ],
       "public/themes/{$name}": [
         "type:wordpress-theme"
