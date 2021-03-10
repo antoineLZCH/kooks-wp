@@ -14,5 +14,5 @@ plugins/*
 
 !plugins/index.php
 !plugins/advanced-custom-fields-pro
-!plugins/wp-sync-db
-!plugins/wp-sync-db-media-files
+!plugins/wp-migrate-db-pro
+!plugins/wp-migrate-db-pro-media-files

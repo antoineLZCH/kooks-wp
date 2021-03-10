@@ -94,7 +94,8 @@ class StarterSite extends Timber\Site
      */
     public function add_to_context(array $context)
     {
-        $context['main_menu'] = new Timber\Menu('primary-navigation');
+        $context['main_menu_1'] = new Timber\Menu('primary-navigation-1');
+        $context['main_menu_2'] = new Timber\Menu('primary-navigation-2');
         $context['footer_menu'] = new Timber\Menu('footer-menu');
         $context['site'] = $this;
         if (function_exists('get_fields')) {
@@ -168,7 +169,8 @@ class StarterSite extends Timber\Site
         }, 20);
 
         register_nav_menus([
-            'primary-navigation' => __('Menu Principal', 'kooks'),
+            'primary-navigation-2' => __('Menu Principal : Gauche', 'kooks'),
+            'primary-navigation-1' => __('Menu Principal : Droite', 'kooks'),
             'footer-navigation' => __('Footer', 'kooks'),
         ]);
 

@@ -28,7 +28,8 @@
     "wpackagist-plugin/formidable": "^4.09",
     "wpackagist-plugin/hide-updates": "^1.1",
     "wpackagist-plugin/safe-svg": "^1.9",
-    "wpackagist-plugin/timber-library": "^1.18"
+    "wpackagist-plugin/timber-library": "^1.18",
+    "wpackagist-plugin/wp-mail-smtp": "^2.6"
   },
   "config": {
     "optimize-autoloader": true,

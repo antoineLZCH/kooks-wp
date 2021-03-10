@@ -23,11 +23,11 @@
         </div>
       {% endif %}
       {% if footer %}
-        <div class="footer-menu flex">
+        <div class="footer-menu flex flex-col lg:flex-row text-center lg:text-left">
           {% for menu_item in footer %}
             <a
               href="{{ menu_item.url }}"
-              class="text-white mx-6"
+              class="text-white mx-6 mb-4 lg:mb-0"
               target="_blank"
               title="{{ menu_item.title }}"
               aria-label="{{ menu_item.title }}"

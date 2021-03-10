@@ -1,12 +1,12 @@
 <div class="block-contact" id="{{ fields.anchor }}">
   <div class="container">
-    <div class="flex">
-      <div class="lg:w-4/12 pr-8">
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:w-4/12 lg:pr-8">
         <h2 class="text-2xl text-orange mb-4">{{ fields.title }}</h2>
         <div class="text-accent-blue mb-8">{{ fields.text }}</div>
-        <img src="{{ fields.image.url }}" alt="{{ fields.image.alt }}" class="mx-auto h-20">
+        <img src="{{ fields.image.url }}" alt="{{ fields.image.alt }}" class="mx-auto h-20 hidden lg:block">
       </div>
-      <div class="lg:w-8/12">
+      <div class="lg:w-8/12 w-full">
         {{ do_shortcode(fields.form_shortcode) }}
       </div>
     </div>

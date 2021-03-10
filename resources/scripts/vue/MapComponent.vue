@@ -44,11 +44,12 @@ export default {
     showModal: true,
   }),
   mounted() {
-    const bounds = new leaflet.latLngBounds();
+    const bounds = new leaflet.latLngBounds()
     this.map = this.$refs.locationMap;
 
     this.locations.forEach(location => {
-      bounds.extend(new leaflet.latLng(location.address.latitude, location.address.longitude))
+      console.log(location)
+      bounds.extend(new leaflet.latLng(location.coordinates.lat, location.coordinates.long))
     })
 
     this.bounds = bounds

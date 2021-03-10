@@ -34,11 +34,18 @@ function fetch_locations($options)
     $locations = $options['sales_points'];
     $locs = [];
     foreach ($locations as $location) {
+        $lat = $location['coordinates']['lat'];
+        $long = $location['coordinates']['long'];
         $l = [];
         $l['logo'] = $location['logo'];
         $l['name'] = $location['name'];
         $l['address'] = $location['address'];
-        $l['coordinates'] = get_lat_lng($location['address']);
+        if ($lat === "" && $long === "") {
+            $l['coordinates'] = get_lat_lng($location['address']);
+        } else {
+            $l['coordinates']['lat'] = $lat;
+            $l['coordinates']['long'] = $long;
+        }
         $locs[] = $l;
     }
     return $locs;
