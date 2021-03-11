@@ -105,7 +105,7 @@
           {% if left_column.contents %}
             <div class="contents flex flex-col">
               {% for content in left_column.contents %}
-                <div class="content mb-8">
+                <div class="content mb-8 lg:w-8/12">
                   <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
                   <div class="text-accent-blue may-have-bold">{{ content.content }}</div>
                 </div>
