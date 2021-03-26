@@ -26,6 +26,12 @@
   }
 }
 
+.is-headline-title {
+  @screen xl {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
 
 .swiper-slide-active {
   opacity: 1;
@@ -74,4 +80,8 @@
   font-weight: bold;
   line-height: 32px;
   letter-spacing: 1px;
+}
+
+.font-arial {
+  font-family: 'Arial Black', sans-serif;
 }

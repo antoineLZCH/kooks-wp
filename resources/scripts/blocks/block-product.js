@@ -15,7 +15,7 @@ $(function () {
 
       closeButton.on('click', function () {
         window.scrollTo({top: current.offset().top})
-        currentModal.addClass('hidden');
+        $('.details').addClass('hidden');
       })
     })
   }

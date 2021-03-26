@@ -1,6 +1,6 @@
 <div class="main-menu lg:py-8">
   <div class="container">
-    <div class="hidden justify-between items-center lg:flex">
+    <div class="hidden justify-between items-center xl:flex">
       {% if menu_right %}
         <div class="w-1/3 flex items-center justify-center">
           {% for item in menu_right %}
@@ -17,7 +17,7 @@
                      class="h-20"
                 >
               {% else %}
-                <span class="text-lg xl:text-2xl mb-1">{{ item.title }}</span>
+                <span class="text-xl xxl:text-2xl mb-1">{{ item.title }}</span>
                 <span class="dot" style="background-color: {{ item.meta('dot_color') }}"></span>
               {% endif %}
             </a>
@@ -51,7 +51,7 @@
                      class="h-20"
                 >
               {% else %}
-                <span class="text-lg xl:text-2xl mb-1">{{ item.title }}</span>
+                <span class="text-xl xxl:text-2xl mb-1">{{ item.title }}</span>
                 <span class="dot" style="background-color: {{ item.meta('dot_color') }}"></span>
               {% endif %}
             </a>
@@ -60,7 +60,7 @@
       {% endif %}
     </div>
   </div>
-  <div class="mobile-menu lg:hidden fixed top-0 flex items-center w-full z-50 bg-white">
+  <div class="mobile-menu xl:hidden fixed top-0 flex items-center w-full z-50 bg-white">
     <div class="container">
       <div class="flex justify-between items-center w-full">
         <a
