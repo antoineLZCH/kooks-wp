@@ -6,7 +6,7 @@
             "key": "field_603ead0752424",
             "label": "Titre",
             "name": "title",
-            "type": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,29 +16,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_603eaf4d52425",
-            "label": "Titre - partie en avant",
-            "name": "title_forward",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_603eaf6c52427",
@@ -97,5 +78,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1614725988
+    "modified": 1616946265
 }

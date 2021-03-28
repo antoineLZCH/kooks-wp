@@ -165,7 +165,7 @@ class StarterSite extends Timber\Site
             wp_enqueue_script('theme-asset');
             wp_deregister_style('wp-pagenavi');
 
-            wp_enqueue_style('poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;900&display=swap');
+            wp_enqueue_style('varela', 'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         }, 20);
 
         register_nav_menus([

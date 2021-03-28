@@ -17,7 +17,7 @@
                      class="h-20"
                 >
               {% else %}
-                <span class="text-xl xxl:text-2xl mb-1">{{ item.title }}</span>
+                <span class="text-xl wide:text-2xl mb-1">{{ item.title }}</span>
                 <span class="dot" style="background-color: {{ item.meta('dot_color') }}"></span>
               {% endif %}
             </a>
@@ -27,12 +27,11 @@
       <div class="w-1/3">
         <a
           href="{{ site.link }}"
-          class=""
           target="_self"
           title="{{ site.name }}"
           aria-label="{{ site.name }}"
         >
-          <img src="{{ options.logo.url }}" alt="{{ site.name }}">
+          <img src="{{ options.logo.url }}" alt="{{ site.name }}" class="main-logo mx-auto">
         </a>
       </div>
       {% if menu_left %}
@@ -51,7 +50,7 @@
                      class="h-20"
                 >
               {% else %}
-                <span class="text-xl xxl:text-2xl mb-1">{{ item.title }}</span>
+                <span class="text-xl wide:text-2xl mb-1">{{ item.title }}</span>
                 <span class="dot" style="background-color: {{ item.meta('dot_color') }}"></span>
               {% endif %}
             </a>
@@ -119,7 +118,7 @@
               title="{{ item.title }}"
               aria-label="{{ item.title }}"
             >
-              <span class="text-lg xl:text-2xl">{{ item.title }}</span>
+              <span class="text-lg wide:text-2xl">{{ item.title }}</span>
               <span class="dot ml-2" style="background-color: {{ item.meta('dot_color') }}"></span>
             </a>
           {% endfor %}

@@ -1,16 +1,16 @@
 {% set side = fields.is_side_reversed ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col lg:items-center items-start' %}
 {% set titles_side = fields.titles.is_title_reversed ? 'flex-col-reverse' : 'flex-col' %}
 
-<div class="block-image-content" id="{{ fields.anchor }}">
+<div class="block-image-content xl:h-screen" id="{{ fields.anchor }}">
   <div class="container">
     <div class="flex {{ side }} items-center">
       <div class="lg:w-1/2 w-full mb-8 lg:mb-0">
-        <div class="flex {{ titles_side }} mb-6 text-orange text-center lg:text-left mb-4">
-          <div class="text text-3xl xl:text-4xl wide:text-7xl font-arial">
+        <div class="flex {{ titles_side }} mb-6 text-orange text-center lg:text-left mb-4 font-arial">
+          <div class="text text-3xl xl:text-4xl wide:text-7xl">
             {{ fields.titles.title }}
           </div>
           {% if fields.titles.tagline %}
-            <div class="tagline recipe-title uppercase">
+            <div class="tagline recipe-title uppercase text-8xl">
               {{ fields.titles.tagline }}
             </div>
           {% endif %}

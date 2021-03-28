@@ -1,31 +1,15 @@
-<div class="block-header h-screen flex items-center justify-center overflow-hidden">
-  <div class="container">
-    <div class="content flex items-center rounded-xl bg-orange-light relative">
-      <div class="xl:w-1/2 w-full">
-        <div class="lg:w-10/12 xl:w-11/12 wide:w-10/12 lg:mx-auto xl:ml-auto text-center xl:text-left">
-          <div class="title">
-            {% if fields.title %}
-              <h1 class="text-5xl xxl:text-8xl flex flex-col mx-2 lg:mx-0">
-                <span class="xl:w-11/12 text-accent-blue font-medium leading-tight">
-                  {{ fields.title }}
-                </span>
-                <span
-                  class="lg:text-6xl xxl:text-10xl font-medium title-forward">
-                  {{ fields.title_forward ? fields.title_forward : "" }}
-                </span>
-              </h1>
-            {% endif %}
+<div class="block-header h-screen flex overflow-hidden bg-center bg-cover relative"
+     style="background-image: url({{ fields.image.url }})">
+  <div class="overlay inset-0 absolute w-full h-full"></div>
+  <div class="container relative z-10">
+    <div class="h-full flex items-center">
+      <div class="mx-auto xl:mr-auto xl:ml-0 xl:w-1/2 text-center">
+        {% if fields.title %}
+          <div class="flex flex-col mx-2 lg:mx-0 header-title">
+            {{ fields.title }}
           </div>
-        </div>
+        {% endif %}
       </div>
-      {% if fields.image %}
-        <div class="lg:w-1/2 hidden xl:block">
-          <img src="{{ fields.image.url }}"
-               alt="{{ fields.image.alt }}"
-               class="object-cover absolute header-image" id="header-image"
-          >
-        </div>
-      {% endif %}
     </div>
   </div>
 </div>

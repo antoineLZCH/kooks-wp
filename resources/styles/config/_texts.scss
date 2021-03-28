@@ -1,23 +1,10 @@
 .recipe-title {
-  @screen xl {
-    font-size: 10rem;
-    line-height: 13rem;
-  }
   font-weight: 600;
-  font-size: 5rem;
-  line-height: 4rem;
   letter-spacing: 2px;
   -webkit-text-stroke-width: 3px;
   -webkit-text-fill-color: transparent;
   @screen lg {
     -webkit-text-stroke-width: 5px;
-  }
-}
-
-.is-headline-title {
-  @screen xl {
-    font-size: 7rem;
-    line-height: 7rem;
   }
 }
 
