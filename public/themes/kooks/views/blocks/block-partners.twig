@@ -1,14 +1,26 @@
-<div class="block-partners" id="{{ fields.anchor }}">
+<div class="block-partners relative" id="{{ fields.anchor }}">
   <div class="container">
     <div class="flex flex-col">
       <div class="content mb-8 text-center lg:w-1/2 mx-auto">
         <h2 class="title-h2 text-orange mb-4">{{ fields.title }}</h2>
-        <div class="text-base text-accent-blue">{{ fields.content }}</div>
+        <div class="text-base text-dark-grey">{{ fields.content }}</div>
       </div>
       {% if fields.partners %}
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col md:flex-row">
           {% for partner in fields.partners %}
-            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+            {% set isReversed = partner.reverse_arrow %}
+            {% set reversedLogo = isReversed ? "md:absolute h-8 w-27 top-14 md:-left-8 lg:left-4 xl:left-16" : "h-20 mx-4" %}
+            <div class="w-full md:w-1/2 mb-8 lg:mb-0 relative">
+              <div class="title-wrapper flex items-center flex-col">
+                <h3 class="text-dark-grey text-2xl">{{ partner.title }}</h3>
+                <div class="flex {{ isReversed ? "flex-row-reverse" : "" }}">
+                  <img src="{{ partner.arrow_image.url }}" alt="{{ partner.arrow_image.alt }}"
+                       class="h-12 hidden md:block">
+                  <img src="{{ partner.logo.url }}" alt="{{ partner.logo.url }}"
+                       class="{{ reversedLogo }}"
+                  >
+                </div>
+              </div>
               <a
                 href="{{ partner.redirection.url }}"
                 class=""

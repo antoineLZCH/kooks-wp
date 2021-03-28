@@ -60,9 +60,28 @@
             "button_label": "",
             "sub_fields": [
                 {
+                    "key": "field_6061123756a18",
+                    "label": "Titre",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_6044cbfbbe233",
-                    "label": "Image",
-                    "name": "image",
+                    "label": "Image de la flèche",
+                    "name": "arrow_image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -97,8 +116,75 @@
                         "id": ""
                     },
                     "return_format": "array"
+                },
+                {
+                    "key": "field_6061124b56a19",
+                    "label": "Logo partenaire",
+                    "name": "logo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_606113a1cc8e5",
+                    "label": "Inverser le sens flèche\/logo",
+                    "name": "reverse_arrow",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Je souhaite inverser le sens flèche \/ logo",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
+        },
+        {
+            "key": "field_606116fa9f31d",
+            "label": "Fond",
+            "name": "background",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
         }
     ],
     "location": [
@@ -118,5 +204,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1615121419
+    "modified": 1616975620
 }

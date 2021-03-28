@@ -1,6 +1,6 @@
 .block-header {
   @screen xl {
-    height: calc(100vh - 64px);
+    height: 650px;
   }
 
   .overlay {
@@ -8,7 +8,6 @@
   }
 
   .header-title > * {
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     @apply text-4xl;
     color: theme('colors.orange-accent');
 
@@ -19,5 +18,12 @@
       @apply text-5xl;
       color: theme('colors.orange');
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-header {
+    background-image: none !important;
+    background-color: theme('colors.orange-light');
   }
 }

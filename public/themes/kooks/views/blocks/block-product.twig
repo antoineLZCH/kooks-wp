@@ -2,26 +2,33 @@
 {% set side = isReversed ? "flex-col xl:flex-row xl:flex-row-reverse" : "flex-col xl:flex-row" %}
 {% set color = fields.main_color %}
 
-<div class="block-product py-8" data-id="{{ block.id }}" id="{{ fields.anchor }}">
+
+<div class="block-product py-8 lg:h-screen relative" data-id="{{ block.id }}" id="{{ fields.anchor }}">
   <div class="base">
     <div class="container">
       <div class="flex {{ side }}">
         <div class="xl:w-1/2 mb-6 lg:mb-0">
-          <h2 class="recipe-title uppercase hidden lg:block" style="color: {{ color }}">{{ fields.title }}</h2>
-          <div class="flex flex-col flex-col-reverse lg:flex-row items-center items-center">
+          <h2 class="recipe-title uppercase hidden lg:block font-arial text-10xl"
+              style="color: {{ color }}">{{ fields.title }}</h2>
+          <div class="flex flex-col flex-col-reverse lg:flex-row items-center">
             <div
-              class="lg:w-1/2 xl:w-6/12 flex flex-col items-start {{ isReversed ? 'xl:items-left' : 'xl:items-center' }} mb-4 lg:mb-0">
-              <h2 class="recipe-title uppercase lg:hidden" style="color: {{ color }}">{{ fields.title }}</h2>
+              class="lg:w-1/2 xl:w-6/12 flex flex-col items-start mb-4 lg:mb-0">
+              <h2 class="recipe-title uppercase lg:hidden font-arial text-5xl"
+                  style="color: {{ color }}">{{ fields.title }}</h2>
               <h3 class="text-xl mb-6"
                   style="color: {{ color }}">{{ fields.first_section.subtitle }}</h3>
-              <div class="text-accent-blue mb-6">{{ fields.first_section.description }}</div>
+              <div class="text-dark-grey mb-6">{{ fields.first_section.description }}</div>
               {% if fields.first_section.redirection %}
                 <button
                   data-target="{{ fields.first_section.redirection.url }}"
-                  class="rounded px-4 py-1 text-white open-modal hidden lg:block" style="background-color: {{ color }}"
+                  class="button-primary text-white open-modal hidden lg:block" style="background-color: {{ color }}"
                   title="{{ fields.first_section.redirection.title }}"
                   aria-label="{{ fields.first_section.redirection.title }}"
                 >
+                  {{ fields.first_section.redirection.title }}
+                </button>
+                <button type="button" class="button-primary text-white toggle-details lg:hidden"
+                        style="background-color: {{ color }}">
                   {{ fields.first_section.redirection.title }}
                 </button>
               {% endif %}
@@ -42,7 +49,7 @@
                     {% for content in left_column.contents %}
                       <div class="content mb-6">
                         <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
-                        <div class="text-accent-blue may-have-bold">{{ content.content }}</div>
+                        <div class="text-dark-grey may-have-bold">{{ content.content }}</div>
                       </div>
                     {% endfor %}
                   </div>
@@ -55,7 +62,7 @@
                     {% for content in right_column.contents %}
                       <div class="content mb-6">
                         <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
-                        <div class="text-accent-blue may-have-bold">{{ content.content }}</div>
+                        <div class="text-dark-grey may-have-bold">{{ content.content }}</div>
                       </div>
                     {% endfor %}
                   </div>
@@ -72,7 +79,7 @@
       </div>
     </div>
   </div>
-  <!-- Hidden -->
+  <!-- Modal -->
   {% set modalSide = isReversed ? 'flex-row-reverse' : 'flex-row' %}
   {% set modalPadding = isReversed ? 'pl-8' : 'pr-8' %}
   <div class="details top-0 left-0 absolute w-full shadow bg-white pt-8 pb-8 hidden bg-white z-10"
@@ -107,7 +114,7 @@
               {% for content in left_column.contents %}
                 <div class="content mb-8">
                   <h4 class="mb-4 text-2xl font-bold font-arial" style="color: {{ color }}">{{ content.title }}</h4>
-                  <div class="text-accent-blue may-have-bold w-9/12">{{ content.content }}</div>
+                  <div class="text-dark-grey may-have-bold w-9/12">{{ content.content }}</div>
                 </div>
               {% endfor %}
             </div>
@@ -120,7 +127,7 @@
               {% for content in right_column.contents %}
                 <div class="content mb-8">
                   <h4 class="mb-4 text-2xl font-bold font-arial" style="color: {{ color }}">{{ content.title }}</h4>
-                  <div class="text-accent-blue may-have-bold w-9/12">{{ content.content }}</div>
+                  <div class="text-dark-grey may-have-bold w-9/12">{{ content.content }}</div>
                 </div>
               {% endfor %}
             </div>

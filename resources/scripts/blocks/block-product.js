@@ -7,6 +7,7 @@ $(function () {
       let currentModal = $('.details', current);
       let closeButton = $('.close-modal', currentModal);
       let openButton = $('.open-modal', current);
+      let detailsButton = $('.toggle-details', current)
 
       openButton.on('click', function () {
         window.scrollTo({top: 0})
@@ -16,6 +17,10 @@ $(function () {
       closeButton.on('click', function () {
         window.scrollTo({top: current.offset().top})
         $('.details').addClass('hidden');
+      })
+
+      detailsButton.on('click', function () {
+        $('.content', current).toggleClass('is-opened')
       })
     })
   }

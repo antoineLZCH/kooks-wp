@@ -3,6 +3,25 @@
     "title": "Bloc de header",
     "fields": [
         {
+            "key": "field_6060fe9505d14",
+            "label": "Foncer l'image de fond",
+            "name": "enable_overlay",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Je souhaite foncer légèrement le fond pour que le texte ressorte mieux.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_603ead0752424",
             "label": "Titre",
             "name": "title",
@@ -78,5 +97,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616946265
+    "modified": 1616969399
 }

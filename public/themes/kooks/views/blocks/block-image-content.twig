@@ -1,10 +1,13 @@
-{% set side = fields.is_side_reversed ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col lg:items-center items-start' %}
+{% set isReversed = fields.is_side_reversed %}
+{% set side = isReversed ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col lg:items-center items-start' %}
 {% set titles_side = fields.titles.is_title_reversed ? 'flex-col-reverse' : 'flex-col' %}
+{% set contentPadding = isReversed ? 'lg:pl-8' : '' %}
+{% set background = fields.background ? "style='background-image: url("~fields.background.url~")'" : "" %}
 
-<div class="block-image-content xl:h-screen" id="{{ fields.anchor }}">
+<div class="block-image-content xl:h-screen relative bg-no-repeat bg-contain" id="{{ fields.anchor }}" {{ background }}>
   <div class="container">
     <div class="flex {{ side }} items-center">
-      <div class="lg:w-1/2 w-full mb-8 lg:mb-0">
+      <div class="lg:w-1/2 w-full mb-8 lg:mb-0 {{ contentPadding }}">
         <div class="flex {{ titles_side }} mb-6 text-orange text-center lg:text-left mb-4 font-arial">
           <div class="text text-3xl xl:text-4xl wide:text-7xl">
             {{ fields.titles.title }}
@@ -15,15 +18,26 @@
             </div>
           {% endif %}
         </div>
-        <div class="content flex flex-col lg:w-9/12 text-accent-blue">
+        <div class="content flex items-start flex-col lg:w-9/12 text-dark-grey">
           {% if fields.text_before_quote %}
-            <div class="may-have-bold mb-6">{{ fields.text_before_quote }}</div>
+            <div class="may-have-bold mb-6 text-dark-grey">{{ fields.text_before_quote }}</div>
           {% endif %}
           {% if fields.quote %}
             <div class="quote w-11/12 mx-auto mb-6 text-3xl font-semibold text-orange">{{ fields.quote }}</div>
           {% endif %}
           {% if fields.text_after_quote %}
-            <div class="may-have-bold mb-8">{{ fields.text_after_quote }}</div>
+            <div class="may-have-bold mb-8 text-dark-grey">{{ fields.text_after_quote }}</div>
+          {% endif %}
+          {% if fields.redirection %}
+            <a
+              href="{{ fields.redirection.url }}"
+              title="{{ fields.redirection.title }}"
+              aria-label="{{ fields.redirection.title }}"
+              target="{{ fields.redirection.target }}"
+              class="button-primary bg-orange text-white"
+            >
+              {{ fields.redirection.title }}
+            </a>
           {% endif %}
         </div>
       </div>
