@@ -1,7 +1,7 @@
-<div class="block-icons-description" id="{{ fields.anchor }}">
+<div class="block-icons-description pt-12 md:pt-0" id="{{ fields.anchor }}">
   <div class="container">
     {% if fields.group %}
-      <div class="flex flex-col lg:flex-row justify-between mb-8">
+      <div class="flex flex-col md:flex-row justify-between mb-8">
         {% for group in fields.group %}
           <div class="lg:w-1/{{ loop.length }} flex flex-col items-center text-center mb-8 lg:mb-0">
             <img src="{{ group.image.url }}"

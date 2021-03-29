@@ -20,7 +20,7 @@ $(function () {
       })
 
       detailsButton.on('click', function () {
-        $('.content', current).toggleClass('is-opened')
+        $('.content-mobile', current).toggleClass('is-opened')
       })
     })
   }

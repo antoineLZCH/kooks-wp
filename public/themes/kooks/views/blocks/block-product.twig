@@ -60,7 +60,7 @@
                 {% if right_column.contents %}
                   <div class="contents flex flex-col">
                     {% for content in right_column.contents %}
-                      <div class="content mb-6">
+                      <div class="content-mobile mb-6">
                         <h4 class="mb-4 text-2xl font-bold" style="color: {{ color }}">{{ content.title }}</h4>
                         <div class="text-dark-grey may-have-bold">{{ content.content }}</div>
                       </div>
@@ -93,7 +93,7 @@
     <div class="flex mb-8 {{ modalSide }} {{ modalPadding }}">
       <div class="banner-wrapper w-8/12">
         <h2
-          class="recipe-title uppercase mb-8 {{ isReversed ? 'pr-8' : 'pl-8' }} {{ isReversed ? 'text-right': 'text-left' }}"
+          class="recipe-title font-arial text-10xl uppercase mb-8 {{ isReversed ? 'pr-8' : 'pl-8' }} {{ isReversed ? 'text-right': 'text-left' }}"
           style="color: {{ color }}">{{ fields.title }}</h2>
         <div class="banner bg-no-repeat bg-center bg-cover"
              style="background-image: url({{ fields.second_section.product_background.url }})"></div>

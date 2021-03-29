@@ -1,5 +1,5 @@
 {% set isReversed = fields.is_side_reversed %}
-{% set side = isReversed ? 'lg:flex-row-reverse flex-col-reverse' : 'lg:flex-row flex-col lg:items-center items-start' %}
+{% set side = isReversed ? 'lg:flex-row-reverse flex-col' : 'lg:flex-row flex-col lg:items-center items-start' %}
 {% set titles_side = fields.titles.is_title_reversed ? 'flex-col-reverse' : 'flex-col' %}
 {% set contentPadding = isReversed ? 'lg:pl-8' : '' %}
 {% set background = fields.background ? "style='background-image: url("~fields.background.url~")'" : "" %}
@@ -13,7 +13,7 @@
             {{ fields.titles.title }}
           </div>
           {% if fields.titles.tagline %}
-            <div class="tagline recipe-title uppercase text-8xl">
+            <div class="tagline recipe-title uppercase text-4xl lg:text-8xl">
               {{ fields.titles.tagline }}
             </div>
           {% endif %}
