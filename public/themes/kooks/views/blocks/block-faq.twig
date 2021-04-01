@@ -1,0 +1,40 @@
+<div class="block-faq" data-id="{{ block.id }}" id="{{ fields.anchor }}">
+  {% if is_admin() %}
+    <div class="bg-orange-accent py-8 text-white text-center flex place-items-center">
+      BLOC FAQ <br>
+      Pour modifier ce bloc, veuillez vous rendre dans l'onglet FAQ.
+    </div>
+  {% else %}
+    <div class="container">
+      <div class="lg:w-8/12 mx-auto">
+        {% if questions %}
+          <div class="flex flex-col">
+            {% for question in questions %}
+              <div class="flex flex-col mb-6" data-question>
+                <div class="flex items-center relative bg-orange text-white p-4" data-question-header>
+                  <span class="text-xl pr-4">{{ question.title }}</span>
+                  <i class="icon-arrow-down text-white transition-transform duration-300 absolute right-4"></i>
+                </div>
+                <div class="p-6 bg-white closed transition-all duration-300 shadow closed" data-question-content>
+                  {{ question.content }}
+                  {% if question.redirection %}
+                    <a
+                      href="{{ question.redirection.url }}"
+                      title="{{ question.redirection.title }}"
+                      aria-label="{{ question.redirection.title }}"
+                      target="{{ question.redirection.target }}"
+                      class="text-orange underline"
+                    >
+                      {{ question.redirection.title }}
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+</div>

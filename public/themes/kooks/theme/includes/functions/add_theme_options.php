@@ -19,4 +19,13 @@ if (function_exists('acf_add_options_page')) {
         'icon_url' => 'dashicons-location'
     ]);
 
+    acf_add_options_page([
+        'page_title' => 'FAQ',
+        'menu_title' => 'FAQ',
+        'menu_slug' => 'faq_options',
+        'capability' => 'edit_posts',
+        'redirect' => false,
+        'icon_url' => 'dashicons-lightbulb'
+    ]);
+
 }

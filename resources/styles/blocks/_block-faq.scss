@@ -1,0 +1,21 @@
+.block-faq {
+  [data-question-header] {
+    border-radius: 4px 4px 0 0;
+
+    &.opened {
+      i {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  [data-question-content] {
+    height: 100%;
+    display: block;
+
+    &.closed {
+      height: 0;
+      display: none;
+    }
+  }
+}
