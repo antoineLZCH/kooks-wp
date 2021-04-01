@@ -8,14 +8,14 @@
             {% for social in options.socials %}
               <a
                 href="{{ social.redirection.url }}"
-                class="mx-6"
+                class="mx-4"
                 target="{{ social.redirection.target }}"
                 title="{{ social.redirection.title }}"
                 aria-label="{{ social.redirection.title }}"
               >
                 <img src="{{ social.image.url }}"
                      alt="{{ social.redirection.title }}"
-                     class="h-6 w-6"
+                     class="h-8 w-8"
                 >
               </a>
             {% endfor %}
@@ -28,7 +28,7 @@
             <a
               href="{{ menu_item.url }}"
               class="text-white mx-6 mb-4 lg:mb-0"
-              target="_blank"
+              target="{{ menu_item.target }}"
               title="{{ menu_item.title }}"
               aria-label="{{ menu_item.title }}"
             >
