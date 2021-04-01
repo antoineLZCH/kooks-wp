@@ -30,7 +30,8 @@
     "wpackagist-plugin/safe-svg": "^1.9",
     "wpackagist-plugin/timber-library": "^1.18",
     "wpackagist-plugin/wp-mail-smtp": "^2.6",
-    "wpackagist-plugin/wp-super-cache": "^1.7"
+    "wpackagist-plugin/wp-super-cache": "^1.7",
+    "wpackagist-plugin/wp-super-minify": "^1.5"
   },
   "config": {
     "optimize-autoloader": true,
@@ -54,7 +55,8 @@
         "wpackagist-plugin/folders",
         "wpackagist-plugin/google-site-kit",
         "wpackagist-plugin/wp-super-cache",
-        "wpackagist-plugin/all-in-one-seo-pack"
+        "wpackagist-plugin/all-in-one-seo-pack",
+        "wpackagist-plugin/wp-super-minify"
       ],
       "public/themes/{$name}": [
         "type:wordpress-theme"
