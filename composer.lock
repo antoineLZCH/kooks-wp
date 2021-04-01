@@ -371,22 +371,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.2.0",
+            "version": "7.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0aa74dfb41ae110835923ef10a9d803a22d50e79"
+                "reference": "7008573787b430c1c1f650e3722d9bba59967628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0aa74dfb41ae110835923ef10a9d803a22d50e79",
-                "reference": "0aa74dfb41ae110835923ef10a9d803a22d50e79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7008573787b430c1c1f650e3722d9bba59967628",
+                "reference": "7008573787b430c1c1f650e3722d9bba59967628",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.4",
-                "guzzlehttp/psr7": "^1.7",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0"
             },
@@ -394,6 +394,7 @@
                 "psr/http-client-implementation": "1.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-curl": "*",
                 "php-http/client-integration-tests": "^3.0",
                 "phpunit/phpunit": "^8.5.5 || ^9.3.5",
@@ -407,7 +408,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.1-dev"
+                    "dev-master": "7.3-dev"
                 }
             },
             "autoload": {
@@ -449,7 +450,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.2.0"
+                "source": "https://github.com/guzzle/guzzle/tree/7.3.0"
             },
             "funding": [
                 {
@@ -469,20 +470,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-10T11:47:56+00:00"
+            "time": "2021-03-23T11:33:13+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "60d379c243457e073cff02bc323a2a86cb355631"
+                "reference": "8e7d04f1f6450fef59366c399cfad4b9383aa30d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/60d379c243457e073cff02bc323a2a86cb355631",
-                "reference": "60d379c243457e073cff02bc323a2a86cb355631",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/8e7d04f1f6450fef59366c399cfad4b9383aa30d",
+                "reference": "8e7d04f1f6450fef59366c399cfad4b9383aa30d",
                 "shasum": ""
             },
             "require": {
@@ -522,22 +523,22 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/1.4.0"
+                "source": "https://github.com/guzzle/promises/tree/1.4.1"
             },
-            "time": "2020-09-30T07:37:28+00:00"
+            "time": "2021-03-07T09:25:29+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.7.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
+                "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
-                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/35ea11d335fd638b5882ff1725228b3d35496ab1",
+                "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1",
                 "shasum": ""
             },
             "require": {
@@ -597,9 +598,9 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.7.0"
+                "source": "https://github.com/guzzle/psr7/tree/1.8.1"
             },
-            "time": "2020-09-30T07:37:11+00:00"
+            "time": "2021-03-21T16:25:00+00:00"
         },
         {
             "name": "illuminate/contracts",
@@ -716,20 +717,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.6.2",
+            "version": "5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "784b3440c9a11c3b65b988cc441db332ab0e6c49"
+                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/784b3440c9a11c3b65b988cc441db332ab0e6c49",
-                "reference": "784b3440c9a11c3b65b988cc441db332ab0e6c49",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/22ea3c6aa631e296c528f58a67371fb2a5e674f2",
+                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.6.2",
+                "johnpbloch/wordpress-core": "5.7.0",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -758,20 +759,20 @@
                 "source": "http://core.trac.wordpress.org/browser",
                 "wiki": "http://codex.wordpress.org/"
             },
-            "time": "2021-02-22T15:30:37+00:00"
+            "time": "2021-03-09T20:32:28+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.6.2",
+            "version": "5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "e48e723c0d7e38c5580631e6ffea29a4388c5dd0"
+                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e48e723c0d7e38c5580631e6ffea29a4388c5dd0",
-                "reference": "e48e723c0d7e38c5580631e6ffea29a4388c5dd0",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/8b057056692ca196aaa7a7ddd915f29426922c6d",
+                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d",
                 "shasum": ""
             },
             "require": {
@@ -779,7 +780,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.6.2"
+                "wordpress/core-implementation": "5.7.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -806,7 +807,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2021-02-22T15:30:31+00:00"
+            "time": "2021-03-09T20:32:23+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -864,10 +865,10 @@
         },
         {
             "name": "koodimonni-language/fi",
-            "version": "5.6.2",
+            "version": "5.7",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.6.2/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/core/5.7/fi.zip"
             },
             "require": {
                 "koodimonni-plugin-language/akismet-fi": "*",
@@ -896,10 +897,10 @@
         },
         {
             "name": "koodimonni-language/fr_fr",
-            "version": "5.6.2",
+            "version": "5.7",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.6.2/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/core/5.7/fr_FR.zip"
             },
             "require": {
                 "koodimonni-plugin-language/akismet-fr_fr": "*",
@@ -928,10 +929,10 @@
         },
         {
             "name": "koodimonni-plugin-language/akismet-fi",
-            "version": "4.1.8",
+            "version": "4.1.9",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/4.1.8/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/akismet/4.1.9/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -947,10 +948,10 @@
         },
         {
             "name": "koodimonni-plugin-language/akismet-fr_fr",
-            "version": "4.1.8",
+            "version": "4.1.9",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/akismet/4.1.8/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/akismet/4.1.9/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1004,10 +1005,10 @@
         },
         {
             "name": "koodimonni-plugin-language/buddypress-fi",
-            "version": "7.2.0",
+            "version": "7.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/buddypress/7.2.0/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/buddypress/7.2.1/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1023,10 +1024,10 @@
         },
         {
             "name": "koodimonni-plugin-language/buddypress-fr_fr",
-            "version": "7.2.0",
+            "version": "7.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/buddypress/7.2.0/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/buddypress/7.2.1/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1042,10 +1043,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fi",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/5.0.0/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/5.1.0/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1061,10 +1062,10 @@
         },
         {
             "name": "koodimonni-plugin-language/woocommerce-fr_fr",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/5.0.0/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/plugin/woocommerce/5.1.0/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1118,10 +1119,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyeleven-fi",
-            "version": "3.6",
+            "version": "3.7",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyeleven/3.6/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyeleven/3.7/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1137,10 +1138,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyeleven-fr_fr",
-            "version": "3.6",
+            "version": "3.7",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyeleven/3.6/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyeleven/3.7/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1156,10 +1157,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyfifteen-fi",
-            "version": "2.8",
+            "version": "2.9",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyfifteen/2.8/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyfifteen/2.9/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1175,10 +1176,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyfifteen-fr_fr",
-            "version": "2.8",
+            "version": "2.9",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyfifteen/2.8/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyfifteen/2.9/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1194,10 +1195,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyfourteen-fi",
-            "version": "3.0",
+            "version": "3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyfourteen/3.0/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyfourteen/3.1/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1213,10 +1214,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyfourteen-fr_fr",
-            "version": "3.0",
+            "version": "3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyfourteen/3.0/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyfourteen/3.1/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1232,10 +1233,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentysixteen-fi",
-            "version": "2.3",
+            "version": "2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentysixteen/2.3/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentysixteen/2.4/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1251,10 +1252,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentysixteen-fr_fr",
-            "version": "2.3",
+            "version": "2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentysixteen/2.3/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentysixteen/2.4/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1270,10 +1271,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyten-fi",
-            "version": "3.2",
+            "version": "3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyten/3.2/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyten/3.3/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1289,10 +1290,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentyten-fr_fr",
-            "version": "3.2",
+            "version": "3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentyten/3.2/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentyten/3.3/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1308,10 +1309,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentythirteen-fi",
-            "version": "3.2",
+            "version": "3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentythirteen/3.2/fi.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentythirteen/3.3/fi.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1327,10 +1328,10 @@
         },
         {
             "name": "koodimonni-theme-language/twentythirteen-fr_fr",
-            "version": "3.2",
+            "version": "3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/theme/twentythirteen/3.2/fr_FR.zip"
+                "url": "https://downloads.wordpress.org/translation/theme/twentythirteen/3.3/fr_FR.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -1488,16 +1489,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.45.1",
+            "version": "2.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "528783b188bdb853eb21239b1722831e0f000a8d"
+                "reference": "2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/528783b188bdb853eb21239b1722831e0f000a8d",
-                "reference": "528783b188bdb853eb21239b1722831e0f000a8d",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4",
+                "reference": "2fd2c4a77d58a4e95234c8a61c5df1f157a91bf4",
                 "shasum": ""
             },
             "require": {
@@ -1577,7 +1578,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-11T18:30:17+00:00"
+            "time": "2021-02-24T17:30:44+00:00"
         },
         {
             "name": "palmiak/timber-acf-wp-blocks",
@@ -1706,27 +1707,22 @@
         },
         {
             "name": "psr/container",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -1739,7 +1735,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common Container Interface (PHP FIG PSR-11)",
@@ -1753,9 +1749,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/master"
+                "source": "https://github.com/php-fig/container/tree/1.1.1"
             },
-            "time": "2017-02-14T16:28:37+00:00"
+            "time": "2021-03-05T17:36:06+00:00"
         },
         {
             "name": "psr/http-client",
@@ -2088,16 +2084,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.4.19",
+            "version": "v4.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "8888741b633f6c3d1e572b7735ad2cae3e03f9c5"
+                "reference": "02d968647fe61b2f419a8dc70c468a9d30a48d3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/8888741b633f6c3d1e572b7735ad2cae3e03f9c5",
-                "reference": "8888741b633f6c3d1e572b7735ad2cae3e03f9c5",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/02d968647fe61b2f419a8dc70c468a9d30a48d3a",
+                "reference": "02d968647fe61b2f419a8dc70c468a9d30a48d3a",
                 "shasum": ""
             },
             "require": {
@@ -2136,7 +2132,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v4.4.19"
+                "source": "https://github.com/symfony/http-foundation/tree/v4.4.20"
             },
             "funding": [
                 {
@@ -2152,20 +2148,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T09:09:26+00:00"
+            "time": "2021-02-25T17:11:33+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v5.2.3",
+            "version": "v5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "7dee6a43493f39b51ff6c5bb2bd576fe40a76c86"
+                "reference": "1b2092244374cbe48ae733673f2ca0818b37197b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/7dee6a43493f39b51ff6c5bb2bd576fe40a76c86",
-                "reference": "7dee6a43493f39b51ff6c5bb2bd576fe40a76c86",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/1b2092244374cbe48ae733673f2ca0818b37197b",
+                "reference": "1b2092244374cbe48ae733673f2ca0818b37197b",
                 "shasum": ""
             },
             "require": {
@@ -2176,12 +2172,13 @@
                 "symfony/polyfill-php80": "^1.15"
             },
             "conflict": {
+                "egulias/email-validator": "~3.0.0",
                 "phpdocumentor/reflection-docblock": "<3.2.2",
                 "phpdocumentor/type-resolver": "<1.4.0",
                 "symfony/mailer": "<4.4"
             },
             "require-dev": {
-                "egulias/email-validator": "^2.1.10",
+                "egulias/email-validator": "^2.1.10|^3.1",
                 "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
                 "symfony/property-access": "^4.4|^5.1",
@@ -2218,7 +2215,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v5.2.3"
+                "source": "https://github.com/symfony/mime/tree/v5.2.6"
             },
             "funding": [
                 {
@@ -2234,7 +2231,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-02T06:10:15+00:00"
+            "time": "2021-03-12T13:18:39+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2727,16 +2724,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v4.4.19",
+            "version": "v4.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "87529f6e305c7acb162840d1ea57922038072425"
+                "reference": "69919991c845b34626664ddc9b3aef9d09d2a5df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/87529f6e305c7acb162840d1ea57922038072425",
-                "reference": "87529f6e305c7acb162840d1ea57922038072425",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/69919991c845b34626664ddc9b3aef9d09d2a5df",
+                "reference": "69919991c845b34626664ddc9b3aef9d09d2a5df",
                 "shasum": ""
             },
             "require": {
@@ -2795,7 +2792,7 @@
                 "url"
             ],
             "support": {
-                "source": "https://github.com/symfony/routing/tree/v4.4.19"
+                "source": "https://github.com/symfony/routing/tree/v4.4.20"
             },
             "funding": [
                 {
@@ -2811,20 +2808,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T09:09:26+00:00"
+            "time": "2021-02-22T15:37:04+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v5.2.3",
+            "version": "v5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "c021864d4354ee55160ddcfd31dc477a1bc77949"
+                "reference": "2cc7f45d96db9adfcf89adf4401d9dfed509f4e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/c021864d4354ee55160ddcfd31dc477a1bc77949",
-                "reference": "c021864d4354ee55160ddcfd31dc477a1bc77949",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/2cc7f45d96db9adfcf89adf4401d9dfed509f4e1",
+                "reference": "2cc7f45d96db9adfcf89adf4401d9dfed509f4e1",
                 "shasum": ""
             },
             "require": {
@@ -2841,7 +2838,7 @@
                 "symfony/yaml": "<4.4"
             },
             "provide": {
-                "symfony/translation-implementation": "2.0"
+                "symfony/translation-implementation": "2.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
@@ -2888,7 +2885,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v5.2.3"
+                "source": "https://github.com/symfony/translation/tree/v5.2.6"
             },
             "funding": [
                 {
@@ -2904,7 +2901,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T10:15:41+00:00"
+            "time": "2021-03-23T19:33:48+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -2986,16 +2983,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.4.19",
+            "version": "v4.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "a1eab2f69906dc83c5ddba4632180260d0ab4f7f"
+                "reference": "0da0e174f728996f5d5072d6a9f0a42259dbc806"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a1eab2f69906dc83c5ddba4632180260d0ab4f7f",
-                "reference": "a1eab2f69906dc83c5ddba4632180260d0ab4f7f",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0da0e174f728996f5d5072d6a9f0a42259dbc806",
+                "reference": "0da0e174f728996f5d5072d6a9f0a42259dbc806",
                 "shasum": ""
             },
             "require": {
@@ -3055,7 +3052,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v4.4.19"
+                "source": "https://github.com/symfony/var-dumper/tree/v4.4.21"
             },
             "funding": [
                 {
@@ -3071,7 +3068,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T09:09:26+00:00"
+            "time": "2021-03-27T19:49:03+00:00"
         },
         {
             "name": "timber/timber",
@@ -3145,16 +3142,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.14.3",
+            "version": "v2.14.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "8bc568d460d88b25c00c046256ec14a787ea60d9"
+                "reference": "0b4ba691fb99ec7952d25deb36c0a83061b93bbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8bc568d460d88b25c00c046256ec14a787ea60d9",
-                "reference": "8bc568d460d88b25c00c046256ec14a787ea60d9",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/0b4ba691fb99ec7952d25deb36c0a83061b93bbf",
+                "reference": "0b4ba691fb99ec7952d25deb36c0a83061b93bbf",
                 "shasum": ""
             },
             "require": {
@@ -3208,7 +3205,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.14.3"
+                "source": "https://github.com/twigphp/Twig/tree/v2.14.4"
             },
             "funding": [
                 {
@@ -3220,7 +3217,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-05T15:34:33+00:00"
+            "time": "2021-03-10T10:05:55+00:00"
         },
         {
             "name": "upstatement/routes",
@@ -3492,15 +3489,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.8.2",
+            "version": "1.9.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.8.2"
+                "reference": "tags/1.9.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.8.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.9.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3510,15 +3507,15 @@
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duplicate-post/",
-                "reference": "tags/4.1.1"
+                "reference": "tags/4.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duplicate-post.4.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.4.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3528,15 +3525,15 @@
         },
         {
             "name": "wpackagist-plugin/folders",
-            "version": "2.6.8",
+            "version": "2.6.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/folders/",
-                "reference": "tags/2.6.8"
+                "reference": "tags/2.6.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/folders.2.6.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/folders.2.6.9.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3546,15 +3543,15 @@
         },
         {
             "name": "wpackagist-plugin/formidable",
-            "version": "4.09.06",
+            "version": "4.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/formidable/",
-                "reference": "tags/4.09.06"
+                "reference": "tags/4.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/formidable.4.09.06.zip"
+                "url": "https://downloads.wordpress.org/plugin/formidable.4.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3564,15 +3561,15 @@
         },
         {
             "name": "wpackagist-plugin/google-site-kit",
-            "version": "1.27.0",
+            "version": "1.29.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-site-kit/",
-                "reference": "tags/1.27.0"
+                "reference": "tags/1.29.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-site-kit.1.27.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/google-site-kit.1.29.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3636,15 +3633,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/2.6.0"
+                "reference": "tags/2.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.2.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.2.7.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3654,15 +3651,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
