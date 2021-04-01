@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d17c1cb073cba1212da0e96b4cc6c60",
+    "content-hash": "f55da823f2e96cb3f8ead4b5cd42f323",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -3488,22 +3488,22 @@
             "type": "wordpress-plugin"
         },
         {
-            "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.9.0",
+            "name": "wpackagist-plugin/all-in-one-seo-pack",
+            "version": "4.0.17",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.9.0"
+                "url": "https://plugins.svn.wordpress.org/all-in-one-seo-pack/",
+                "reference": "tags/4.0.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-seo-pack.4.0.17.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
+            "homepage": "https://wordpress.org/plugins/all-in-one-seo-pack/"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",

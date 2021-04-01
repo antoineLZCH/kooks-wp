@@ -21,7 +21,7 @@
     "wordplate/framework": "^7.1",
     "wordplate/plate": "^6.0",
     "wpackagist-plugin/advanced-custom-fields-pro": "^5.9.4",
-    "wpackagist-plugin/custom-post-type-ui": "^1.8",
+    "wpackagist-plugin/all-in-one-seo-pack": "^4.0",
     "wpackagist-plugin/duplicate-post": "^4.0.2",
     "wpackagist-plugin/folders": "^2.6",
     "wpackagist-plugin/formidable": "^4.09",
@@ -53,7 +53,8 @@
         "wpackagist-plugin/duplicate-post",
         "wpackagist-plugin/folders",
         "wpackagist-plugin/google-site-kit",
-        "wpackagist-plugin/wp-super-cache"
+        "wpackagist-plugin/wp-super-cache",
+        "wpackagist-plugin/all-in-one-seo-pack"
       ],
       "public/themes/{$name}": [
         "type:wordpress-theme"
