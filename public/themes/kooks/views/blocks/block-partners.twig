@@ -16,9 +16,17 @@
                 <div class="flex {{ isReversed ? "flex-row-reverse" : "" }}">
                   <img src="{{ partner.arrow_image.url }}" alt="{{ partner.arrow_image.alt }}"
                        class="h-12 hidden md:block">
-                  <img src="{{ partner.logo.url }}" alt="{{ partner.logo.url }}"
-                       class="{{ reversedLogo }}"
+                  <a
+                    href="{{ partner.redirection.url }}"
+                    title="{{ partner.redirection.title }}"
+                    aria-label="{{ partner.redirection.title }}"
+                    target="{{ partner.redirection.target }}"
+                    class=""
                   >
+                    <img src="{{ partner.logo.url }}" alt="{{ partner.logo.url }}"
+                         class="{{ reversedLogo }}"
+                    >
+                  </a>
                 </div>
               </div>
               <a
