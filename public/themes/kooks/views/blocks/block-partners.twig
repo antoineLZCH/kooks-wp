@@ -1,45 +1,32 @@
 <div class="block-partners relative" id="{{ fields.anchor }}">
   <div class="container">
     <div class="flex flex-col">
-      <div class="content mb-8 text-center lg:w-1/2 mx-auto">
-        <h2 class="title-h2 text-orange mb-4">{{ fields.title }}</h2>
+      <div class="content mb-8 lg:mb-14 text-center lg:w-1/2 mx-auto">
+        <h2 class="text-orange uppercase text-2xl lg:text-4xl mb-4">{{ fields.title }}</h2>
         <div class="text-base text-dark-grey">{{ fields.content }}</div>
       </div>
       {% if fields.partners %}
-        <div class="flex flex-col md:flex-row">
-          {% for partner in fields.partners %}
-            {% set isReversed = partner.reverse_arrow %}
-            {% set reversedLogo = isReversed ? "md:absolute h-8 w-27 top-14 md:-left-8 lg:left-4 xl:left-16" : "h-20 mx-4" %}
-            <div class="w-full md:w-1/2 mb-8 lg:mb-0 relative">
-              <div class="title-wrapper flex items-center flex-col">
-                <h3 class="text-dark-grey text-2xl">{{ partner.title }}</h3>
-                <div class="flex {{ isReversed ? "flex-row-reverse" : "" }}">
-                  <img src="{{ partner.arrow_image.url }}" alt="{{ partner.arrow_image.alt }}"
-                       class="h-12 hidden md:block">
-                  <a
-                    href="{{ partner.redirection.url }}"
-                    title="{{ partner.redirection.title }}"
-                    aria-label="{{ partner.redirection.title }}"
-                    target="{{ partner.redirection.target }}"
-                    class=""
-                  >
-                    <img src="{{ partner.logo.url }}" alt="{{ partner.logo.url }}"
-                         class="{{ reversedLogo }}"
-                    >
-                  </a>
-                </div>
+        <div class="flex items-center justify-center flex-col">
+          <div class="flex items-center justify-center">
+            <img src="{{ asset('assets/images/partner-arrow-left.svg') }}" alt="Partenaires - Flèche gauche"
+                 class="relative top-2 hidden md:block">
+            <h3 class="text-dark-grey mb-10 text-2xl md:mx-14">{{ fields.subtitle }}</h3>
+            <img src="{{ asset('assets/images/partner-arrow-right.svg') }}" alt="Partenaires - Flèche droite"
+                 class="relative top-2 hidden md:block">
+          </div>
+          <div class="flex items-center justify-center">
+            {% for partner in fields.partners %}
+              <div class="flex items-center flex-col mx-6 {{ is_admin() ? 'hidden': '' }}">
+                <a
+                  href="{{ partner.redirection.url }}"
+                  title="{{ partner.redirection.title }}"
+                  aria-label="{{ partner.redirection.title }}"
+                  target="{{ partner.redirection.target }}">
+                  <img src="{{ partner.logo.url }}" alt="{{ partner.logo.url }}" class="h-14">
+                </a>
               </div>
-              <a
-                href="{{ partner.redirection.url }}"
-                class=""
-                target="{{ partner.redirection.target }}"
-                title="{{ partner.redirection.title }}"
-                aria-label="{{ partner.redirection.title }}"
-              >
-                <img src="{{ partner.image.url }}" alt="{{ partner.image.alt }}" class="mx-auto">
-              </a>
-            </div>
-          {% endfor %}
+            {% endfor %}
+          </div>
         </div>
       {% endif %}
     </div>

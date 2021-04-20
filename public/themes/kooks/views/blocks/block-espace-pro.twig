@@ -1,10 +1,12 @@
 <div class="block-pro" data-id="{{ block.id }}" id="{{ fields.anchor }}">
-  <div class="container">
+  <div class="absolute w-full h-full bg-cover z-10 bg-no-repeat bg-cover"
+       style="background-image: url({{ fields.background.url }}); max-height: 600px; background-position: {{ fields.background_position }};"></div>
+  <div class="container relative z-20">
     <div class="flex flex-col items-center">
       <div class="content flex flex-col flex-col-reverse lg:flex-row mb-6">
         <div class="lg:w-1/2">
           <h1 class="text-orange uppercase text-2xl lg:text-4xl mb-4">{{ fields.title }}</h1>
-          <div class="content text-grey-dark">{{ fields.content }}</div>
+          <div class="content text-dark-grey">{{ fields.content }}</div>
         </div>
         <div class="lg:w-1/2">
           <img src="{{ fields.image.url }}" alt="{{ fields.image.alt }}" class="w-full">
