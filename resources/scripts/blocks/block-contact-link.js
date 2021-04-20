@@ -9,7 +9,7 @@ $(function () {
       let button = $('#redirection', $(this))
 
       button.css('marginLeft', `${assetLeftWidth + 10}px`)
-      assetRight.css('right', `-${assetRightWidth + 10}px`)
+      button.css('marginRight', `${assetRightWidth + 10}px`)
     })
   }
 })
