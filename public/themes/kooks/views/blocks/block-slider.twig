@@ -12,10 +12,11 @@
             </h2>
             <img src="{{ slide.image.url }}"
                  alt="{{ slide.image.alt }}"
-                 class="slide-image"
+                 class="slide-image relative z-20"
             >
-            <img src="{{ slide.background.url }}" alt="{{ slide.background.alt }}"
-                 class="slide-splash absolute -left-12 top-0 hidden md:block">
+            <div style="background-image: url('{{ slide.background.url }}')"
+                 class="w-full h-full absolute left-0 top-0 z-10 bg-contain bg-no-repeat bg-center"
+            ></div>
           </div>
         </div>
       {% endfor %}

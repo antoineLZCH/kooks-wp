@@ -1,21 +1,14 @@
 <div class="block-pro" data-id="{{ block.id }}" id="{{ fields.anchor }}">
   <div class="container">
-    <div class="lg:w-8/12 mx-auto flex flex-col items-center">
-      <div class="content">
-        <h1 class="text-orange uppercase text-2xl lg:text-4xl mb-4">{{ fields.title }}</h1>
-        <div class="content text-grey-dark">{{ fields.content }}</div>
-      </div>
-      <div class="media">
-        <a
-          href="{{ fields.redirection.url }}"
-          title="{{ fields.redirection.title }}"
-          aria-label="{{ fields.redirection.title }}"
-          target="{{ fields.redirection.target }}"
-          class="flex flex-col items-center"
-        >
-          <img src="{{ fields.image.url }}" alt="{{ fields.image.alt }}" class="mb-6">
-          <div class="button-primary bg-orange text-white">{{ fields.redirection.title }}</div>
-        </a>
+    <div class="flex flex-col items-center">
+      <div class="content flex flex-col flex-col-reverse lg:flex-row mb-6">
+        <div class="lg:w-1/2">
+          <h1 class="text-orange uppercase text-2xl lg:text-4xl mb-4">{{ fields.title }}</h1>
+          <div class="content text-grey-dark">{{ fields.content }}</div>
+        </div>
+        <div class="lg:w-1/2">
+          <img src="{{ fields.image.url }}" alt="{{ fields.image.alt }}" class="w-full">
+        </div>
       </div>
     </div>
   </div>
