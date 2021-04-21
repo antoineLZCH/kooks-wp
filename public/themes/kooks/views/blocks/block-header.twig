@@ -1,7 +1,8 @@
 {% set isOverlay = fields.enable_overlay ? '' : 'hidden' %}
+{% set headerHeight = fields.enable_large ? '800px' : '650px' %}
 
 <div class="block-header flex overflow-hidden bg-center bg-cover relative py-8 md:py-0"
-     style="background-image: url({{ fields.image.url }})">
+     style="background-image: url({{ fields.image.url }}); height: {{ headerHeight }}; background-position: {{ fields.background_position }};">
   <div class="overlay inset-0 absolute w-full h-full {{ isOverlay }}"></div>
   <div class="container relative z-10">
     <div class="h-full flex items-center">

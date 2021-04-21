@@ -22,6 +22,53 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_60807b3502871",
+            "label": "Position du fond",
+            "name": "background_position",
+            "type": "select",
+            "instructions": "Permet de choisir le point de départ du fond",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bottom center": "Du bas",
+                "top center": "Du haut",
+                "left center": "De gauche",
+                "right center": "De droite",
+                "center center": "Centré"
+            },
+            "default_value": "center center",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_608079de8d99b",
+            "label": "Header plus haut",
+            "name": "enable_large",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Je souhaite que le header soit plus haut",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_603ead0752424",
             "label": "Titre",
             "name": "title",
@@ -97,5 +144,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616969399
+    "modified": 1619033324
 }

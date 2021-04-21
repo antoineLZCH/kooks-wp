@@ -5,15 +5,35 @@
         <div class="swiper-slide ">
           <div class="relative">
             <h2
-              class="{{ is_admin() ? '' : 'recipe-title' }} text-5xl xl:text-6xl xxl:text-10xl uppercase lg:w-10/12 lg:ml-auto text-center lg:text-left mb-6 lg:mb-0 font-arial"
+              class="{{ is_admin() ? '' : 'recipe-title' }} text-5xl xl:text-6xl xxl:text-10xl uppercase
+              lg:w-10/12 lg:ml-auto text-center lg:text-left mb-6 lg:mb-0 font-arial"
               style="-webkit-text-stroke-color: {{ slide.color }}"
             >
               {{ slide.title }}
             </h2>
-            <img src="{{ slide.image.url }}"
-                 alt="{{ slide.image.alt }}"
-                 class="slide-image relative z-20"
-            >
+            <div class="flex flex-col lg:flex-row items-center">
+              <div class="lg:w-1/2 flex justify-end">
+                <div class="flex flex-col items-center lg:w-4/12 lg:mr-10">
+                  <p class="text-dark-grey text-center mb-6">{{ slide.description }}</p>
+                  <a
+                    href="{{ slide.redirection.url }}"
+                    title="{{ slide.redirection.title }}"
+                    aria-label="{{ slide.redirection.title }}"
+                    target="{{ slide.redirection.target }}"
+                    class="button-primary text-white"
+                    style="background-color: {{ slide.color }};"
+                  >
+                    {{ slide.redirection.title }}
+                  </a>
+                </div>
+              </div>
+              <div class="lg:w-1/2">
+                <img src="{{ slide.image.url }}"
+                     alt="{{ slide.image.alt }}"
+                     class="slide-image relative z-20"
+                >
+              </div>
+            </div>
             <div style="background-image: url('{{ slide.background.url }}')"
                  class="w-full h-full absolute left-0 top-0 z-10 bg-contain bg-no-repeat bg-center"
             ></div>

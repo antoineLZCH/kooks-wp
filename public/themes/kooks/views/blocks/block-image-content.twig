@@ -1,13 +1,13 @@
 {% set isReversed = fields.is_side_reversed %}
 {% set side = isReversed ? 'lg:flex-row-reverse flex-col' : 'lg:flex-row flex-col lg:items-center items-start' %}
 {% set titles_side = fields.titles.is_title_reversed ? 'flex-col-reverse' : 'flex-col' %}
-{% set contentPadding = isReversed ? 'lg:pl-8' : '' %}
+{% set contentSize = isReversed ? 'lg:w-9/12' : 'lg:w-11/12' %}
 {% set background = fields.background ? "style='background-image: url("~fields.background.url~")'" : "" %}
 
 <div class="block-image-content xl:h-screen relative bg-no-repeat bg-contain" id="{{ fields.anchor }}" {{ background }}>
   <div class="container">
     <div class="flex {{ side }} items-center">
-      <div class="lg:w-1/2 w-full mb-8 lg:mb-0 {{ contentPadding }}">
+      <div class="lg:w-1/2 w-full mb-8 lg:mb-0 lg:pl-8">
         <div class="flex {{ titles_side }} mb-6 text-orange text-center lg:text-left mb-4 font-arial">
           <div class="text text-3xl xl:text-4xl wide:text-7xl">
             {{ fields.titles.title }}
@@ -18,7 +18,7 @@
             </div>
           {% endif %}
         </div>
-        <div class="content flex items-start flex-col lg:w-9/12 text-dark-grey">
+        <div class="content flex items-start flex-col text-dark-grey {{ contentSize }}">
           {% if fields.text_before_quote %}
             <div class="may-have-bold mb-6 text-dark-grey">{{ fields.text_before_quote }}</div>
           {% endif %}
@@ -34,7 +34,8 @@
               title="{{ fields.redirection.title }}"
               aria-label="{{ fields.redirection.title }}"
               target="{{ fields.redirection.target }}"
-              class="button-primary bg-orange text-white"
+              class="button-primary text-white mx-auto"
+              style="background-color: {{ fields.button_color }};"
             >
               {{ fields.redirection.title }}
             </a>

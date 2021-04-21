@@ -114,7 +114,7 @@ module.exports = {
       white: '#FFFFFF',
       black: '#000000',
       'dark-blue': '#071126',
-      'orange': '#ED722E',
+      'orange': '#EA690B',
       'orange-accent': 'rgba(255, 105, 0, 0.7)',
       'yellow': '#F6BE00',
       'green': '#979B0B',

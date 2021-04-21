@@ -23,7 +23,7 @@
     content: '';
     width: 32px;
     height: 32px;
-    opacity: 0.5;
+    opacity: 1;
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,12 +33,12 @@
 
   &:before {
     top: -8px;
-    left: -8px;
+    left: -54px;
   }
 
   &:after {
     bottom: -8px;
-    right: -8px;
+    right: 16px;
     transform: rotate(180deg);
   }
 }
