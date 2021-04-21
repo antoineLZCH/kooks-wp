@@ -1,0 +1,18 @@
+{% set bgSize = fields.background_size %}
+{% set bgPosition = fields.background_position %}
+{% set bgHeight = fields.height %}
+
+{% if is_admin() %}
+  <div class="bg-orange-light flex flex-col p-8 items-center justify-center">
+    <div>BLOC DE BACKGROUND</div>
+    <div>Cliquer pour configurer</div>
+  </div>
+{% else %}
+  <div
+    class="block-background absolute bg-no-repeat hidden lg:block -top-1/2 w-full {{ bgPosition }} {{ bgSize }}"
+    id="{{ fields.anchor }}"
+    style="z-index: -1; height: {{ bgHeight }}px; background-image: url({{ fields.image.url }})">
+  </div>
+{% endif %}
+
+
