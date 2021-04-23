@@ -187,6 +187,9 @@ module.exports = {
         padding: {
           default: '1rem'
         }
+      },
+      width: {
+        'fit-content': 'fit-content'
       }
     }
   },
