@@ -1,0 +1,39 @@
+<div class="block-contact-link-products is-first-step">
+  <div class="container">
+    <div class="flex flex-col {{ fields.position }}">
+      <div class="flex flex-col items-center">
+        {% if fields.text or fields.first_step_text %}
+          <p class="text-dark-grey mb-6 text-center mb-4" data-first-step>{{ fields.first_step_text }}</p>
+          <p class="text-dark-grey mb-6 text-center mb-4" data-second-step>{{ fields.text }}</p>
+        {% endif %}
+        <button
+          title="{{ fields.first_step_button }}"
+          aria-label="{{ fields.first_step_button }}"
+          class="flex items-start relative w-fit-content"
+          data-first-step
+          id="secondStepEnabler"
+        >
+          <img src="{{ asset('assets/images/rdv-ici.svg') }}" alt="Rendez-vous ici !" class="absolute left-0"
+               id="asset-left">
+          <div class="button-primary bg-orange text-white" id="redirection-step-1">{{ fields.first_step_button }}</div>
+          <img src="{{ asset('assets/images/ou-la.svg') }}" alt="C'est par là !" class="absolute right-0"
+               id="asset-right">
+        </button>
+        <a
+          href="{{ fields.redirection.url }}"
+          title="{{ fields.redirection.title }}"
+          aria-label="{{ fields.redirection.title }}"
+          target="{{ fields.redirection.target }}"
+          class="flex items-start relative w-fit-content"
+          data-second-step
+        >
+          <img src="{{ asset('assets/images/rdv-ici.svg') }}" alt="Rendez-vous ici !" class="absolute left-0"
+               id="asset-left">
+          <div class="button-primary bg-orange text-white" id="redirection">{{ fields.redirection.title }}</div>
+          <img src="{{ asset('assets/images/ou-la.svg') }}" alt="C'est par là !" class="absolute right-0"
+               id="asset-right">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
