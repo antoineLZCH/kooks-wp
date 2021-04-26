@@ -30,5 +30,10 @@ $(function () {
       stepOneElements.addClass('hidden')
       stepTwoElements.removeClass('hidden')
     })
+
+    $('.close-modal').on('click', () => {
+      $('.details-modal', productBlocks).removeClass('is-visible')
+      productBlocks.css('margin-bottom', '0')
+    })
   }
 })
