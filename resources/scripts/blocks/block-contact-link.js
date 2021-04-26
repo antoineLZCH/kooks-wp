@@ -1,24 +1,8 @@
 $(function () {
-  let block = $('.block-contact-link, .block-contact-link-products');
-  if (block.length > 0) {
-    block.each(function () {
-      let assetRight = $('#asset-right', $(this))
-      let assetRightWidth = assetRight.width()
-      let assetLeft = $('#asset-left', $(this))
-      let assetLeftWidth = assetLeft.width()
-      let button = $('#redirection, #redirection-step-1', $(this))
-
-      button.css('marginLeft', `${assetLeftWidth + 10}px`)
-      button.css('marginRight', `${assetRightWidth + 10}px`)
-    })
-  }
-})
-
-$(function () {
   let blockProducts = $('.block-contact-link-products')
-  if (blockProducts.length > 0) {
-    let stepOneElements = $('[data-first-step]', blockProducts)
-    let stepTwoElements = $('[data-second-step]', blockProducts)
+  let stepOneElements = $('[data-first-step]', blockProducts)
+  let stepTwoElements = $('[data-second-step]', blockProducts)
+  if (blockProducts.length > 0 && $(window).innerWidth() >= 1280) {
     let productBlocks = $('[data-product]')
 
     stepTwoElements.addClass('hidden')
@@ -35,5 +19,9 @@ $(function () {
       $('.details-modal', productBlocks).removeClass('is-visible')
       productBlocks.css('margin-bottom', '0')
     })
+  }
+  if ($(window).innerWidth() < 1280) {
+    stepOneElements.addClass('hidden')
+    stepTwoElements.removeClass('hidden')
   }
 })

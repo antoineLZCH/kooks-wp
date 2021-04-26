@@ -17,8 +17,8 @@
                   <p class="text-dark-grey text-center mb-6">{{ slide.description }}</p>
                   <a
                     href="{{ slide.redirection.url }}"
-                    title="{{ slide.redirection.title }}"
-                    aria-label="{{ slide.redirection.title }}"
+                    title="{{ slide.redirection.title }} {{ slide.title }}"
+                    aria-label="{{ slide.redirection.title }} {{ slide.title }}"
                     target="{{ slide.redirection.target }}"
                     class="button-primary text-white"
                     style="background-color: {{ slide.color }};"
@@ -34,8 +34,8 @@
                 >
               </div>
             </div>
-            <div style="background-image: url('{{ slide.background.url }}')"
-                 class="w-full h-full absolute left-0 top-0 z-10 bg-contain bg-no-repeat bg-center"
+            <div style="background-image: url('{{ slide.background.url }}'); z-index: -1;"
+                 class="w-full h-full absolute left-0 top-0 bg-contain bg-no-repeat bg-center"
             ></div>
           </div>
         </div>
