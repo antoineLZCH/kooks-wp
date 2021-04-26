@@ -4,3 +4,6 @@ node_modules
 .idea
 public/.htaccess
 package-lock.json
+
+!public/plugins/wp-sync-db
+!public/plugins/wp-sync-db-media-files
