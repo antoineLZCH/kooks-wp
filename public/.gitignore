@@ -16,3 +16,4 @@ plugins/*
 !plugins/advanced-custom-fields-pro
 !plugins/wp-sync-db
 !plugins/wp-sync-db-media-files
+!plugins/imagify
