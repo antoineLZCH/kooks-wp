@@ -8,11 +8,13 @@
   }
 
   .navigation {
-    top: 50%;
+    top: 75%;
     width: 100%;
     z-index: 10;
     position: absolute;
+    transform: translateY(-100%);
     @screen lg {
+      top: 50%;
       transform: translateY(-50%);
     }
 
