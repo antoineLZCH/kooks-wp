@@ -3,7 +3,7 @@
 {% set color = fields.main_color %}
 
 
-<div class="block-product py-8 lg:h-screen relative" data-id="{{ block.id }}" id="{{ fields.anchor }}">
+<div class="block-product py-8 xl:h-screen relative" data-id="{{ block.id }}" id="{{ fields.anchor }}" data-product>
   <div class="base">
     <div class="container">
       <div class="flex {{ side }}">
@@ -21,13 +21,13 @@
               {% if fields.first_section.redirection %}
                 <button
                   data-target="{{ fields.first_section.redirection.url }}"
-                  class="button-primary text-white open-modal hidden lg:block" style="background-color: {{ color }}"
+                  class="button-primary text-white open-modal hidden xl:block" style="background-color: {{ color }}"
                   title="{{ fields.first_section.redirection.title }}"
                   aria-label="{{ fields.first_section.redirection.title }}"
                 >
                   {{ fields.first_section.redirection.title }}
                 </button>
-                <button type="button" class="button-primary text-white toggle-details lg:hidden"
+                <button type="button" class="button-primary text-white toggle-details xl:hidden"
                         style="background-color: {{ color }}">
                   {{ fields.first_section.redirection.title }}
                 </button>
@@ -40,8 +40,8 @@
                    class="w-full product-image relative lg:-top-7 mb-6 lg:mb-0 {{ imagePlacement }}">
             </div>
           </div>
-          <div class="content lg:hidden">
-            <div class="flex flex-col lg:flex-row">
+          <div class="content xl:hidden">
+            <div class="flex flex-col xl:flex-row">
               <div class="w-full">
                 {% set left_column = fields.second_section.left_column %}
                 {% if left_column.contents %}
