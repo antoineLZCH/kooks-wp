@@ -26,6 +26,7 @@
         </div>
         <div class="flex items-start">
           <img src="{{ asset('assets/images/rdv-ici.svg') }}" alt="Rendez-vous ici !" id="asset-left"
+               data-second-step
                class="hidden md:block">
           <a
             href="{{ fields.redirection.url }}"
@@ -39,6 +40,7 @@
             {{ fields.redirection.title }}
           </a>
           <img src="{{ asset('assets/images/ou-la.svg') }}" alt="C'est par là !" id="asset-right"
+               data-second-step
                class="hidden md:block">
         </div>
       </div>
