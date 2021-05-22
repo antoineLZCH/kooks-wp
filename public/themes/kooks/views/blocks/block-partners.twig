@@ -16,13 +16,13 @@
           </div>
           <div class="flex items-center justify-center mb-8">
             {% for partner in fields.partners %}
-              <div class="flex items-center flex-col mx-6 {{ is_admin() ? 'hidden': '' }}">
+              <div class="partner-logo-wrapper flex items-center flex-col mx-6 {{ is_admin() ? 'hidden': '' }}">
                 <a
                   href="{{ partner.redirection.url }}"
                   title="{{ partner.redirection.title }}"
                   aria-label="{{ partner.redirection.title }}"
                   target="{{ partner.redirection.target }}">
-                  <img src="{{ partner.logo.url }}" alt="{{ partner.logo.url }}" class="h-14">
+                  <img src="{{ partner.logo.url }}" alt="{{ partner.logo.url }}">
                 </a>
               </div>
             {% endfor %}
