@@ -12,6 +12,7 @@ $(function () {
       let modalBanner = $('.banner', bannerWrapper)
       let modalProductImage = this.querySelector('.image-wrapper').getBoundingClientRect()
       let imagePosition = modalBanner.width() - (modalProductImage.width / 8)
+      currentModal.addClass('hidden')
 
       if (bannerWrapper.hasClass('is-reversed')) {
         $('[data-modal-image]', currentModal).css({
