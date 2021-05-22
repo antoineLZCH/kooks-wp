@@ -1,9 +1,10 @@
 .block-partners {
   .partner-logo-wrapper {
     img {
-      height: 90px;
-      width: 90px;
-      object-fit: cover;
+      @screen lg {
+        height: 90px;
+      }
+      height: 120px;
     }
   }
 }
