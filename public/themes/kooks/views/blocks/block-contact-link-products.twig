@@ -8,7 +8,7 @@
         {% endif %}
         <div class="flex items-start">
           <img src="{{ asset('assets/images/rdv-ici-v2.svg') }}" alt="Rendez-vous ici !"
-               data-first-step
+               data-first-step class="contact-asset"
                id="asset-left">
           <button
             title="{{ fields.first_step_button }}"
@@ -21,11 +21,12 @@
             {{ fields.first_step_button }}
           </button>
           <img src="{{ asset('assets/images/c-est-la-v2.svg') }}" alt="C'est par là !"
-               data-first-step
+               data-first-step class="contact-asset"
                id="asset-right">
         </div>
         <div class="flex items-start">
           <img src="{{ asset('assets/images/rdv-ici-v2.svg') }}" alt="Rendez-vous ici !" id="asset-left"
+               class="contact-asset"
                data-second-step>
           <a
             href="{{ fields.redirection.url }}"
@@ -38,6 +39,7 @@
             {{ fields.redirection.title }}
           </a>
           <img src="{{ asset('assets/images/c-est-la-v2.svg') }}" alt="C'est par là !" id="asset-right"
+               class="contact-asset"
                data-second-step>
         </div>
       </div>

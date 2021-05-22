@@ -20,6 +20,9 @@ $(function () {
       productBlocks.css('margin-bottom', '0')
     })
   }
+  if (blockProducts.length > 0 && $(window).innerWidth() < 1280) {
+    $('.contact-asset').addClass('hidden')
+  }
   if ($(window).innerWidth() < 1280) {
     stepOneElements.addClass('hidden')
     stepTwoElements.removeClass('hidden')
