@@ -27,13 +27,13 @@ $(function () {
 
       openButton.on('click', function () {
         window.scrollTo({top: current.offset().top})
-        $('.details-modal').removeClass('is-visible');
-        currentModal.addClass('is-visible');
+        $('.details-modal').addClass('hidden');
+        currentModal.removeClass('hidden')
       })
 
       closeButton.on('click', function () {
         window.scrollTo({top: current.offset().top})
-        $('.details-modal').removeClass('is-visible');
+        $('.details-modal').addClass('hidden');
       })
 
       detailsButton.on('click', function () {

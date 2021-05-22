@@ -2,6 +2,7 @@
   .product-image {
     width: auto;
     max-height: 450px;
+
     img {
       filter: drop-shadow(-10px 10px 12px rgba(#292929, 0.3));
     }
@@ -17,21 +18,5 @@
       height: 100%;
       transition: .2s ease-in-out;
     }
-  }
-}
-
-.details-modal {
-  opacity: 0;
-  z-index: -1;
-  visibility: hidden;
-  pointer-events: none;
-  transition: .2s ease;
-
-  &.is-visible {
-    opacity: 1;
-    z-index: 1;
-    visibility: visible;
-    pointer-events: all;
-    transition: .2s ease;
   }
 }
