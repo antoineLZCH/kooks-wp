@@ -17,7 +17,7 @@
           <div class="flex flex-wrap items-center justify-center mb-8">
             {% for partner in fields.partners %}
               <div
-                class="partner-logo-wrapper flex items-center flex-col w-1/2 lg:w-auto lg:mx-6 {{ is_admin() ? 'hidden': '' }}">
+                class="partner-logo-wrapper flex items-center flex-col w-1/2 mb-4 lg:mb-0g lg:w-auto lg:mx-6 {{ is_admin() ? 'hidden': '' }}">
                 <a
                   href="{{ partner.redirection.url }}"
                   title="{{ partner.redirection.title }}"
