@@ -2,7 +2,9 @@
   .product-image {
     width: auto;
     max-height: 450px;
-    filter: drop-shadow(-10px 10px 12px rgba(#292929, 0.3));
+    img {
+      filter: drop-shadow(-10px 10px 12px rgba(#292929, 0.3));
+    }
   }
 
   .content-mobile {

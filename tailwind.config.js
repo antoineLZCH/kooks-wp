@@ -106,7 +106,8 @@ module.exports = {
       '7xl': '4rem',
       '8xl': '4.5rem',
       '9xl': '5rem',
-      '10xl': '5.5rem'
+      '10xl': '5.5rem',
+      '15xl': '8rem'
     },
     colors: {
       // default means there's no modifier, so .bg-purple-default is .bg-purple
@@ -116,7 +117,7 @@ module.exports = {
       'dark-blue': '#071126',
       'orange': '#EA690B',
       'orange-accent': 'rgba(255, 105, 0, 0.7)',
-      'yellow': '#F6BE00',
+      'yellow': '#EABD4C',
       'green': '#979B0B',
       'green-alt': '#999D0E',
       'pink': '#D54281',
