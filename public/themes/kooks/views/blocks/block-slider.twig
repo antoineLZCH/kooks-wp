@@ -12,7 +12,7 @@
               {{ slide.title }}
             </h2>
             <div class="flex flex-col lg:flex-row items-center">
-              <div class="lg:w-1/2 flex justify-end">
+              <div class="lg:w-1/2 flex justify-end mb-6 lg:mb-0">
                 <div class="flex flex-col items-center lg:w-5/12 lg:mr-10">
                   <p class="text-dark-grey text-center mb-6 text-xl">{{ slide.description }}</p>
                   <a
@@ -35,7 +35,7 @@
               </div>
             </div>
             <div style="background-image: url('{{ slide.background.url }}'); z-index: -1;"
-                 class="w-full h-full absolute left-0 top-0 bg-contain bg-no-repeat bg-center"
+                 class="w-full h-full absolute left-0 top-0 bg-contain bg-no-repeat bg-center hidden lg:block"
             ></div>
           </div>
         </div>
