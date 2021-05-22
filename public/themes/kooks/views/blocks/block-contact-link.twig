@@ -5,17 +5,22 @@
         {% if fields.text %}
           <p class="text-dark-grey mb-6 text-center mb-4 ">{{ fields.text }}</p>
         {% endif %}
-        <a
-          href="{{ fields.redirection.url }}"
-          title="{{ fields.redirection.title }}"
-          aria-label="{{ fields.redirection.title }}"
-          target="{{ fields.redirection.target }}"
-          class="flex items-start relative w-fit-content"
-        >
-          <img src="{{ asset('assets/images/rdv-ici-v2.svg') }}" alt="Rendez-vous ici !" id="asset-left" class="hidden md:block">
-          <div class="button-primary bg-orange text-white mx-2" id="redirection">{{ fields.redirection.title }}</div>
-          <img src="{{ asset('assets/images/c-est-la-v2.svg') }}" alt="C'est par là !" id="asset-right" class="hidden md:block">
-        </a>
+        <div class="flex items-start">
+          <img src="{{ asset('assets/images/rdv-ici-v2.svg') }}" alt="Rendez-vous ici !" id="asset-left"
+               class="hidden md:block">
+          <a
+            href="{{ fields.redirection.url }}"
+            title="{{ fields.redirection.title }}"
+            aria-label="{{ fields.redirection.title }}"
+            target="{{ fields.redirection.target }}"
+            class="button-primary bg-orange text-white mx-2"
+            style="min-width: 184px"
+          >
+            {{ fields.redirection.title }}
+          </a>
+          <img src="{{ asset('assets/images/c-est-la-v2.svg') }}" alt="C'est par là !" id="asset-right"
+               class="hidden md:block">
+        </div>
       </div>
     </div>
   </div>
